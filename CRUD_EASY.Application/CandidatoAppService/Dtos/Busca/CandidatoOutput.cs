@@ -30,7 +30,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public Expression<Func<Candidato,bool>> GetExpression(BuscaCandidatoInput input)
+        public static Expression<Func<Candidato,bool>> GetExpression(BuscaCandidatoInput input)
         {
             Expression<Func<Candidato, bool>> exp = e => (input.Term.IsNullOrEmpty() || e.Nome.Contains(input.Term) || e.Telefone.Contains(input.Term) || e.Email.Contains(input.Term));
             return exp;
@@ -41,15 +41,13 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         /// </summary>
         /// <param name="c">candidato</param>
         /// <returns></returns>
-        public CandidatoOutput MapTo(Candidato c)
+        public static CandidatoOutput MapTo(Candidato c)
         {
             var candidato = c.MapTo<CandidatoOutput>();
 
             candidato.Conhecimentos = AtributoDto.GetProperties(c.Conhecimento);
 
             return candidato;
-
-
         }
 
 

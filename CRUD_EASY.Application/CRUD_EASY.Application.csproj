@@ -193,6 +193,10 @@
     <Compile Include="CandidatoAppService\Dtos\Busca\BuscaCandidatoInput.cs" />
     <Compile Include="CandidatoAppService\Dtos\Busca\CandidatoOutput.cs" />
     <Compile Include="CandidatoAppService\Dtos\Base\AtributoDto.cs" />
+    <Compile Include="CandidatoAppService\Dtos\Busca\LoadOutput.cs" />
+    <Compile Include="CandidatoAppService\Dtos\Delete\DeleteInput.cs" />
+    <Compile Include="CandidatoAppService\Service\CandidatoAppService.cs" />
+    <Compile Include="CandidatoAppService\Service\ICandidatoAppService.cs" />
     <Compile Include="CRUD_EASYApplicationModule.cs" />
     <Compile Include="CRUD_EASYAppServiceBase.cs" />
     <Compile Include="Authorization\Accounts\AccountAppService.cs" />
@@ -239,10 +243,7 @@
       <Name>CRUD_EASY.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CandidatoAppService\Dtos\GetById\" />
-    <Folder Include="CandidatoAppService\Service\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
