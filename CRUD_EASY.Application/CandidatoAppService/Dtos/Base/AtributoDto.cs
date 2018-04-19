@@ -28,7 +28,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
 
             var resultado = "";
             //Pega as propriedades da classe 
-            var properties = c.GetType().GetProperties().Where(e => e.GetType() != typeof(string)).ToList();
+            var properties = c.GetType().GetProperties().Where(e => e.GetType() != typeof(string) && e.Name !="Id").ToList();
             var atributos = new List<AtributoDto>();
 
             foreach (PropertyInfo propertyInfo in properties)
@@ -58,7 +58,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
         {
             //É semelhante ao processo ao lado só que ele retorna os atributos ao invés da string concatenada 
             var  c = new Conhecimento();
-            var properties = c.GetType().GetProperties().Where(e => e.GetType() != typeof(string)).ToList();
+            var properties = c.GetType().GetProperties().Where(e => e.GetType() != typeof(string) && e.Name != "Id").ToList();
             var atributos = new List<AtributoDto>();
 
             foreach (PropertyInfo propertyInfo in properties)
@@ -66,7 +66,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
                 atributos.Add(new AtributoDto()
                 {
                     Nome = propertyInfo.Name,
-                    Nota = Convert.ToInt32(propertyInfo.GetValue(c, null).ToString())
+                    Nota = Convert.ToInt32((propertyInfo.GetValue(c, null)?.ToString()) ?? "0")
                 });
             }
 
