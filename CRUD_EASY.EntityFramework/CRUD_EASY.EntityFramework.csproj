@@ -219,6 +219,10 @@
     <Compile Include="Migrations\201804191437400_Initial.Designer.cs">
       <DependentUpon>201804191437400_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804191951264_Valor_Hora.cs" />
+    <Compile Include="Migrations\201804191951264_Valor_Hora.Designer.cs">
+      <DependentUpon>201804191951264_Valor_Hora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="CRUD_EASYDataModule.cs" />
@@ -256,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804191437400_Initial.resx">
       <DependentUpon>201804191437400_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804191951264_Valor_Hora.resx">
+      <DependentUpon>201804191951264_Valor_Hora.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
