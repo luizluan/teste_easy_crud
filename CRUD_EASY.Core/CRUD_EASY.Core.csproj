@@ -179,6 +179,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Candidatos\Attributes\Bancos\Entity\Banco.cs" />
+    <Compile Include="Candidatos\Attributes\Bancos\Types\TipodeConta.cs" />
+    <Compile Include="Candidatos\Attributes\Conhecimentos\Entity\Conhecimento.cs" />
+    <Compile Include="Candidatos\Attributes\HorariosDisponiveis\Entity\HorarioDisponivel.cs" />
+    <Compile Include="Candidatos\Attributes\MelhoresHorarios\Entity\MelhorHorario.cs" />
+    <Compile Include="Candidatos\Entity\Candidato.cs" />
     <Compile Include="CRUD_EASYConsts.cs" />
     <Compile Include="CRUD_EASYCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />
@@ -236,6 +242,13 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\CRUD_EASY-vi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Candidatos\Attributes\Bancos\Manager\" />
+    <Folder Include="Candidatos\Attributes\Conhecimentos\Manager\" />
+    <Folder Include="Candidatos\Attributes\HorariosDisponiveis\Manager\" />
+    <Folder Include="Candidatos\Attributes\MelhoresHorarios\Manager\" />
+    <Folder Include="Candidatos\Manager\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
