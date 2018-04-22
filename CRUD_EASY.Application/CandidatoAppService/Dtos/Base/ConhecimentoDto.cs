@@ -1,18 +1,16 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Application.Services.Dto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity
+namespace CRUD_EASY.CandidatoAppService.Dtos.Base
 {
-    [Table("Conhecimento")]
-    public class Conhecimento : Entity<int>
+    public class ConhecimentoDto : EntityDto<int>
     {
-        [Range(0, 5)]
+
         public int Ionic { get; set; }
 
         #region Atributos
@@ -95,7 +93,5 @@ namespace CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity
         #endregion Atributos
 
         public string Outra { get; set; }
-
-
     }
 }

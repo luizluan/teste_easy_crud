@@ -61,5 +61,7 @@ namespace CRUD_EASY.Candidatos.Entity
 
         public Conhecimento Conhecimento { get; set; }
 
+        public int ValorHora {get;set;}
+
     }
 }
