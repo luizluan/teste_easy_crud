@@ -28,24 +28,28 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
 
             var resultado = "";
             //Pega as propriedades da classe 
-            var properties = c.GetType().GetProperties().Where(e => e.GetType() != typeof(string) && e.Name !="Id").ToList();
+            var properties = c.GetType().GetProperties().Where(e => e.PropertyType.Name !="String" && e.Name != "Id").ToList();
             var atributos = new List<AtributoDto>();
 
             foreach (PropertyInfo propertyInfo in properties)
             {
                 //Pega o valor e o nome
+                var nota = Convert.ToInt32(propertyInfo.GetValue(c, null).ToString());
+                if(nota>0)
                 atributos.Add(new AtributoDto()
                 {
                     Nome = propertyInfo.Name,
-                    Nota = Convert.ToInt32(propertyInfo.GetValue(c, null).ToString())
+                    Nota = nota
                 });
             }
 
             //Ordena por nota e concatena com vírgula
             foreach (var h in atributos.OrderByDescending(e => e.Nota))
             {
-                resultado = resultado + h.Nome + " ,";
+                resultado = resultado + h.Nome + ", ";
             }
+            //Remove Última vírgula e último espaço 
+            resultado = resultado.Remove(resultado.Length-2);
             return resultado;
         }
 
@@ -58,7 +62,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
         {
             //É semelhante ao processo ao lado só que ele retorna os atributos ao invés da string concatenada 
             var  c = new Conhecimento();
-            var properties = c.GetType().GetProperties().Where(e => e.GetType() != typeof(string) && e.Name != "Id").ToList();
+            var properties = c.GetType().GetProperties().Where(e => e.PropertyType.Name != "String" && e.Name != "Id").ToList();
             var atributos = new List<AtributoDto>();
 
             foreach (PropertyInfo propertyInfo in properties)

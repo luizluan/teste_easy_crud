@@ -15,7 +15,7 @@ namespace CRUD_EASY.Candidatos.Manager
 
         Task Delete(Guid Id);
 
-        Task<List<Candidato>> Get(Expression<Func<Candidato,bool>> expression);
+        List<Candidato> Get(Expression<Func<Candidato,bool>> expression);
 
     }
 }

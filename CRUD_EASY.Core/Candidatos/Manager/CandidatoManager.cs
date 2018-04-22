@@ -5,17 +5,23 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
+using Abp.Domain.Services;
 using CRUD_EASY.Candidatos.Entity;
 
 namespace CRUD_EASY.Candidatos.Manager
 {
-    public class CandidatoManager : ICandidatoManager
+    public class CandidatoManager : DomainService, ICandidatoManager
     {
 
         /// <summary>
         /// Repositório
         /// </summary>
         private readonly IRepository<Candidato, Guid> _candidatoRepository;
+
+        public CandidatoManager(IRepository<Candidato, Guid> candidatoRepository)
+        {
+            _candidatoRepository = candidatoRepository;
+        }
 
 
         /// <summary>
@@ -40,14 +46,15 @@ namespace CRUD_EASY.Candidatos.Manager
             await _candidatoRepository.DeleteAsync(Id);
         }
 
+
         /// <summary>
         /// Método que retorna uma lista de candidatos usando uma expressão 
         /// </summary>
         /// <param name="expression">Termos de pesquisa</param>
         /// <returns></returns>
-        public async Task<List<Candidato>> Get(Expression<Func<Candidato, bool>> expression)
+        public List<Candidato> Get(Expression<Func<Candidato, bool>> expression)
         {
-            return await _candidatoRepository.GetAllListAsync(expression);
+            return _candidatoRepository.GetAllIncluding(x => x.Banco, x => x.MelhorHorario, x => x.HorarioDisponivel, x => x.Conhecimento).Where(expression).ToList();
         }
     }
 }

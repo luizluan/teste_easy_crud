@@ -7,6 +7,8 @@ using Abp.Domain.Repositories;
 using Abp.Modules;
 using CRUD_EASY.Authorization.Roles;
 using CRUD_EASY.Authorization.Users;
+using CRUD_EASY.CandidatoAppService.Dtos.Base;
+using CRUD_EASY.CandidatoAppService.Dtos.Busca;
 using CRUD_EASY.Roles.Dto;
 using CRUD_EASY.Users.Dto;
 
@@ -38,7 +40,11 @@ namespace CRUD_EASY
 
                 cfg.CreateMap<CreateUserDto, User>();
                 cfg.CreateMap<CreateUserDto, User>().ForMember(x => x.Roles, opt => opt.Ignore());
+
+                cfg.CreateMissingTypeMaps = true;
             });
+
+         
         }
     }
 }
