@@ -3512,6 +3512,7 @@
     </Content>
     <Content Include="Views\Account\_TenantChange.js" />
     <Content Include="Views\Account\_TenantChangeModal.js" />
+    <Content Include="App\Main\views\candidato\create\create.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -3668,6 +3669,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="App\Main\views\candidato\create\create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3676,6 +3678,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Main\views\candidato\search\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

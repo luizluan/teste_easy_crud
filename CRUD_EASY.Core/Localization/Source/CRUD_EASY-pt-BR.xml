@@ -43,5 +43,7 @@
     <text name="TenantSelection_Detail" value="Por favor selecione um dos seguintes tenants." />
     <text name="Logout" value="Sair" />
 
+    <text name="Candidato" value="Candidato"/>
+
   </texts>
 </localizationDictionary>

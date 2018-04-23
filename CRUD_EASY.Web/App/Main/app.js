@@ -61,6 +61,14 @@
                     templateUrl: '/App/Main/views/about/about.cshtml',
                     menu: 'About' //Matches to name of 'About' menu in CRUD_EASYNavigationProvider
                 });
+
+
+            $stateProvider
+                .state('candidato',
+                {   url:'/candidato',
+                    templateUrl: '/App/Main/views/candidato/create/create.cshtml',
+                    menu: 'Candidato'
+                });
         }
     ]);
 
