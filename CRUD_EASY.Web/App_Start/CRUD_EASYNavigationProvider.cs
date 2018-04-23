@@ -23,14 +23,16 @@ namespace CRUD_EASY.Web
                         icon: "fa fa-home",
                         requiresAuthentication: true
                         )
-                ).AddItem(
+
+                           .AddItem(
                     new MenuItemDefinition(
-                        "Tenants",
-                        L("Tenants"),
-                        url: "#tenants",
-                        icon: "fa fa-globe",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
+                        "Candidato",
+                        new LocalizableString("Candidato", CRUD_EASYConsts.LocalizationSourceName),
+                        url: "#/candidato",
+                        icon: "fa fa-home",
+                        requiresAuthentication: true
                         )
+
                 ).AddItem(
                     new MenuItemDefinition(
                         "Users",
@@ -38,24 +40,24 @@ namespace CRUD_EASY.Web
                         url: "#users",
                         icon: "fa fa-users",
                         requiredPermissionName: PermissionNames.Pages_Users
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "Roles",
-                        L("Roles"),
-                        url: "#users",
-                        icon: "fa fa-tag",
-                        requiredPermissionName: PermissionNames.Pages_Roles
-                    )
-                )
-                .AddItem(
-                    new MenuItemDefinition(
-                        "About",
-                        new LocalizableString("About", CRUD_EASYConsts.LocalizationSourceName),
-                        url: "#/about",
-                        icon: "fa fa-info"
-                        )
-                );
+                        )));
+                //).AddItem(
+                //    new MenuItemDefinition(
+                //        "Roles",
+                //        L("Roles"),
+                //        url: "#users",
+                //        icon: "fa fa-tag",
+                //        requiredPermissionName: PermissionNames.Pages_Roles
+                //    )
+                //)
+                //.AddItem(
+                //    new MenuItemDefinition(
+                //        "About",
+                //        new LocalizableString("About", CRUD_EASYConsts.LocalizationSourceName),
+                //        url: "#/about",
+                //        icon: "fa fa-info"
+                //        )
+                //);
         }
 
         private static ILocalizableString L(string name)

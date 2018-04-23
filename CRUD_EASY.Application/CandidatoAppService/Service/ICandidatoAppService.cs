@@ -17,7 +17,7 @@ namespace CRUD_EASY.CandidatoAppService.Service
 
         Task<Guid> CreateOrUpdate(CandidatoDto input);
 
-        Task<List<CandidatoOutput>> GetAll(BuscaCandidatoInput input);
+        List<CandidatoOutput> GetAll(BuscaCandidatoInput input);
 
         Task Delete(DeleteInput input);
     }

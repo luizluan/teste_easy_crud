@@ -12,7 +12,7 @@ using CRUD_EASY.Candidatos.Manager;
 
 namespace CRUD_EASY.CandidatoAppService.Service
 {
-    public class CandidatoAppService : ICandidatoAppService
+    public class CandidatoAppService : CRUD_EASYAppServiceBase,  ICandidatoAppService
     {
 
 
@@ -66,11 +66,11 @@ namespace CRUD_EASY.CandidatoAppService.Service
         /// Busca Candidatos por Termo Nome Email ou Telefone
         /// </summary>
         /// <param name="input"></param>
-        /// <returns></returns>
-        public async Task<List<CandidatoOutput>> GetAll(BuscaCandidatoInput input)
+        /// <returns>Lista de Candidatos</returns>
+        public List<CandidatoOutput> GetAll(BuscaCandidatoInput input)
         {
             //Busca Candidatos Utilizando a Expressão que está no Dto 
-            var candidatos = await _candidatoManager.Get(CandidatoOutput.GetExpression(input));
+            var candidatos = _candidatoManager.Get(CandidatoOutput.GetExpression(input));
 
             //Mapeia as entidades para o dto usando o método estático no dto 
             var candidatosDto = candidatos.Select(CandidatoOutput.MapTo).ToList();
@@ -79,6 +79,6 @@ namespace CRUD_EASY.CandidatoAppService.Service
             return candidatosDto;
         }
 
-        
+
     }
 }

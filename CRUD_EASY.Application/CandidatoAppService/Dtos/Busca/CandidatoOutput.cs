@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
 {
+    [AutoMapFrom(typeof(Candidato))]
     public class CandidatoOutput : CandidatoDto
     {
 
@@ -32,7 +33,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         /// <returns></returns>
         public static Expression<Func<Candidato,bool>> GetExpression(BuscaCandidatoInput input)
         {
-            Expression<Func<Candidato, bool>> exp = e => (input.Term.IsNullOrEmpty() || e.Nome.Contains(input.Term) || e.Telefone.Contains(input.Term) || e.Email.Contains(input.Term));
+            Expression<Func<Candidato, bool>> exp = e => (input.Term == "" || input.Term == null || e.Nome.Contains(input.Term) || e.Telefone.Contains(input.Term) || e.Email.Contains(input.Term));
             return exp;
         }
 
@@ -44,9 +45,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         public static CandidatoOutput MapTo(Candidato c)
         {
             var candidato = c.MapTo<CandidatoOutput>();
-
             candidato.Conhecimentos = AtributoDto.GetProperties(c.Conhecimento);
-
             return candidato;
         }
 
