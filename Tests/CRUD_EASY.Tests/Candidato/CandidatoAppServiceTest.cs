@@ -67,7 +67,7 @@ namespace CRUD_EASY.Tests.Candidato
         }
 
         [Fact]
-        public async Task Devo_Retornar_Atributos_do_Conhecimento()
+        public void Devo_Retornar_Atributos_do_Conhecimento()
         {
             //ACT
             var atributos = _candidatoAppService.LoadAtributos();
