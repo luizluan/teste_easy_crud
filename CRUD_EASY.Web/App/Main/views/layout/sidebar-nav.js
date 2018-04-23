@@ -15,7 +15,7 @@
 
                 createMenuItem("Candidato", "", "person", "", [
                         createMenuItem("Cadastrar", "", "create", "candidato"),
-                        createMenuItem("Consultar", "", "search", "")
+                        //createMenuItem("Consultar", "", "search", "")
                     
                 ])
 

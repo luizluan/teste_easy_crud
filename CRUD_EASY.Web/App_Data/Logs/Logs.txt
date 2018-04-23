@@ -817,3 +817,831 @@ DEBUG 2018-04-23 17:35:15,477 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2018-04-23 17:35:49,940 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f6654318-f9fc-4f3b-8888-42b0a40c2b9c
 DEBUG 2018-04-23 17:35:51,475 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"df923888-5e65-4d1f-a7e2-dc2cc86c49e5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T17:35:51.4755227-03:00","Properties":{}}
 DEBUG 2018-04-23 17:35:51,485 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: df923888-5e65-4d1f-a7e2-dc2cc86c49e5
+DEBUG 2018-04-23 17:53:36,976 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-23 17:53:37,038 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-23 17:53:37,058 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,087 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,087 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:37,094 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-23 17:53:37,704 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 17:53:37,704 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 17:53:37,704 [1    ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 17:53:37,704 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 17:53:38,296 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 17:53:45,718 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-23 17:53:45,822 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-23 17:53:45,886 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-23 17:53:45,929 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-23 17:53:45,941 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-23 17:53:46,096 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 17:53:46,266 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-23 17:53:46,266 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-23 17:53:46,273 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-23 17:53:46,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-23 17:53:46,279 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-23 17:53:46,279 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-23 17:53:46,279 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-23 17:53:48,828 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-23 17:53:48,829 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-23 17:53:48,830 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-23 17:53:48,832 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-23 17:53:48,833 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-23 17:53:48,834 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-23 17:53:48,835 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+WARN  2018-04-23 17:54:05,617 [6    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2018-04-23 17:58:16,266 [17   ] ity.AntiForgery.AbpMvcAntiForgeryManager - The provided anti-forgery token was meant for a different claims-based user than the current user.
+WARN  2018-04-23 17:58:16,266 [17   ] rity.AntiForgery.AbpAntiForgeryMvcFilter - Empty or invalid anti forgery header token.
+WARN  2018-04-23 17:58:16,266 [17   ] rity.AntiForgery.AbpAntiForgeryMvcFilter - Requested URI: http://localhost:6234/Account/Login?ReturnUrl=%2F
+DEBUG 2018-04-23 17:58:16,737 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ecb0efce-6bfd-4aa6-9927-175173254a5a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T17:58:16.7286899-03:00","Properties":{}}
+DEBUG 2018-04-23 17:58:16,823 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ecb0efce-6bfd-4aa6-9927-175173254a5a
+DEBUG 2018-04-23 17:59:02,563 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ecb0efce-6bfd-4aa6-9927-175173254a5a
+DEBUG 2018-04-23 17:59:03,237 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"901ba496-a757-4e10-a390-50fd7f105e42","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T17:59:03.2373927-03:00","Properties":{}}
+DEBUG 2018-04-23 17:59:03,291 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 901ba496-a757-4e10-a390-50fd7f105e42
+DEBUG 2018-04-23 18:00:03,555 [12   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 901ba496-a757-4e10-a390-50fd7f105e42
+DEBUG 2018-04-23 18:00:05,267 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7da80786-ae81-4fcc-ae74-87d6efc392f3","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:00:05.2679975-03:00","Properties":{}}
+DEBUG 2018-04-23 18:00:05,277 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7da80786-ae81-4fcc-ae74-87d6efc392f3
+DEBUG 2018-04-23 18:01:31,969 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7da80786-ae81-4fcc-ae74-87d6efc392f3
+DEBUG 2018-04-23 18:01:33,139 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"feec1acf-103a-4741-bbe8-962961dd1851","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:01:33.1381024-03:00","Properties":{}}
+DEBUG 2018-04-23 18:01:33,149 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: feec1acf-103a-4741-bbe8-962961dd1851
+DEBUG 2018-04-23 18:04:27,976 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: feec1acf-103a-4741-bbe8-962961dd1851
+DEBUG 2018-04-23 18:04:28,673 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"64c10cfc-470f-4a74-a454-2d91dcade765","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:04:28.6733025-03:00","Properties":{}}
+DEBUG 2018-04-23 18:04:28,703 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 64c10cfc-470f-4a74-a454-2d91dcade765
+DEBUG 2018-04-23 18:07:07,905 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 64c10cfc-470f-4a74-a454-2d91dcade765
+DEBUG 2018-04-23 18:07:08,572 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d15cfb39-bf2a-4861-9691-0def4430fafa","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:07:08.5725954-03:00","Properties":{}}
+DEBUG 2018-04-23 18:07:08,583 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d15cfb39-bf2a-4861-9691-0def4430fafa
+DEBUG 2018-04-23 18:08:14,380 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d15cfb39-bf2a-4861-9691-0def4430fafa
+DEBUG 2018-04-23 18:08:14,974 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1bd9de85-048e-445c-9c85-3ea9fbec8001","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:08:14.9744525-03:00","Properties":{}}
+DEBUG 2018-04-23 18:08:14,983 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1bd9de85-048e-445c-9c85-3ea9fbec8001
+DEBUG 2018-04-23 18:10:48,030 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1bd9de85-048e-445c-9c85-3ea9fbec8001
+DEBUG 2018-04-23 18:10:48,981 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"27036ff6-443b-4493-b8f4-caad67e7923e","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:10:48.9814008-03:00","Properties":{}}
+DEBUG 2018-04-23 18:10:49,017 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 27036ff6-443b-4493-b8f4-caad67e7923e
+DEBUG 2018-04-23 18:11:41,506 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 27036ff6-443b-4493-b8f4-caad67e7923e
+DEBUG 2018-04-23 18:11:42,309 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ca2f4721-9423-4800-8b11-1cc5332deddc","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:11:42.3095001-03:00","Properties":{}}
+DEBUG 2018-04-23 18:11:42,329 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ca2f4721-9423-4800-8b11-1cc5332deddc
+DEBUG 2018-04-23 18:12:13,562 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ca2f4721-9423-4800-8b11-1cc5332deddc
+DEBUG 2018-04-23 18:12:14,114 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"97223582-689c-45a7-b998-8e0d8018b13a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:12:14.1143482-03:00","Properties":{}}
+DEBUG 2018-04-23 18:12:14,126 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 97223582-689c-45a7-b998-8e0d8018b13a
+DEBUG 2018-04-23 18:12:17,301 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 97223582-689c-45a7-b998-8e0d8018b13a
+DEBUG 2018-04-23 18:12:18,235 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"32e97821-b1ad-4f60-9fd5-bf8db056db93","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:12:18.2355872-03:00","Properties":{}}
+DEBUG 2018-04-23 18:12:18,258 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 32e97821-b1ad-4f60-9fd5-bf8db056db93
+DEBUG 2018-04-23 18:13:37,741 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 32e97821-b1ad-4f60-9fd5-bf8db056db93
+DEBUG 2018-04-23 18:13:38,351 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fa31fa04-979f-4b49-9e42-9a04923e9a9c","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:13:38.3502439-03:00","Properties":{}}
+DEBUG 2018-04-23 18:13:38,358 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fa31fa04-979f-4b49-9e42-9a04923e9a9c
+DEBUG 2018-04-23 18:13:46,425 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fa31fa04-979f-4b49-9e42-9a04923e9a9c
+DEBUG 2018-04-23 18:13:46,954 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"acc46986-61ec-4dac-9145-4588129a60d3","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:13:46.9547431-03:00","Properties":{}}
+DEBUG 2018-04-23 18:13:46,962 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: acc46986-61ec-4dac-9145-4588129a60d3
+DEBUG 2018-04-23 18:14:01,392 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: acc46986-61ec-4dac-9145-4588129a60d3
+DEBUG 2018-04-23 18:14:01,900 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"28b45b6d-e4e6-430d-a586-56cd70b15332","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:14:01.9006116-03:00","Properties":{}}
+DEBUG 2018-04-23 18:14:01,904 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 28b45b6d-e4e6-430d-a586-56cd70b15332
+DEBUG 2018-04-23 18:17:05,760 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 28b45b6d-e4e6-430d-a586-56cd70b15332
+DEBUG 2018-04-23 18:17:06,423 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8cff621d-754b-487f-a963-b659451cb146","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:17:06.4233338-03:00","Properties":{}}
+DEBUG 2018-04-23 18:17:06,438 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8cff621d-754b-487f-a963-b659451cb146
+DEBUG 2018-04-23 18:18:22,920 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8cff621d-754b-487f-a963-b659451cb146
+DEBUG 2018-04-23 18:18:23,599 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d5da1de4-9d3e-45f6-8d2a-0daf18ad3a23","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:18:23.5998174-03:00","Properties":{}}
+DEBUG 2018-04-23 18:18:23,607 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d5da1de4-9d3e-45f6-8d2a-0daf18ad3a23
+DEBUG 2018-04-23 18:18:39,301 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d5da1de4-9d3e-45f6-8d2a-0daf18ad3a23
+DEBUG 2018-04-23 18:18:39,875 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d22a4b01-c57a-40d3-82d6-69e03e07d784","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:18:39.8757653-03:00","Properties":{}}
+DEBUG 2018-04-23 18:18:39,890 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d22a4b01-c57a-40d3-82d6-69e03e07d784
+DEBUG 2018-04-23 18:19:13,784 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d22a4b01-c57a-40d3-82d6-69e03e07d784
+DEBUG 2018-04-23 18:19:14,381 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"edc0d6d3-fc9b-4012-ba8e-ad0d6a129e41","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:19:14.3817707-03:00","Properties":{}}
+DEBUG 2018-04-23 18:19:14,389 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: edc0d6d3-fc9b-4012-ba8e-ad0d6a129e41
+DEBUG 2018-04-23 18:19:25,667 [14   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-23 18:19:25,668 [14   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:19:25,669 [14   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:19:25,669 [14   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-23 18:19:35,931 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-23 18:19:37,541 [18   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-23 18:19:37,551 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,553 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,554 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,555 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,556 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,556 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,557 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,557 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,557 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,557 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,557 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,558 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,558 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,558 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,558 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,559 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,559 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:37,563 [18   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-23 18:19:40,229 [18   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:19:40,229 [18   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:19:40,229 [18   ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:19:40,229 [18   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:19:41,860 [18   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:19:44,253 [18   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-23 18:19:44,275 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-23 18:19:44,302 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-23 18:19:44,315 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-23 18:19:44,328 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-23 18:19:44,654 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:19:44,728 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-23 18:19:44,728 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-23 18:19:44,735 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-23 18:19:44,735 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-23 18:19:44,737 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-23 18:19:44,737 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-23 18:19:44,737 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-23 18:19:44,737 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-23 18:19:44,737 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-23 18:19:44,738 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-23 18:19:44,738 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-23 18:19:44,738 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-23 18:19:44,738 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-23 18:19:44,738 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-23 18:19:44,738 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-23 18:19:47,237 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-23 18:19:47,240 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-23 18:19:47,242 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-23 18:19:47,243 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-23 18:19:47,244 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-23 18:19:47,246 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-23 18:19:47,248 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-23 18:20:11,615 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"edc0d6d3-fc9b-4012-ba8e-ad0d6a129e41","IpAddress":null,"TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:20:11.5730912-03:00","Properties":{}}
+DEBUG 2018-04-23 18:20:11,688 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4fe88a2d-fa2e-4c11-a013-9ac0a40961da","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:20:11.6870986-03:00","Properties":{}}
+DEBUG 2018-04-23 18:20:12,791 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4fe88a2d-fa2e-4c11-a013-9ac0a40961da
+DEBUG 2018-04-23 18:20:17,432 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fc9cf86b-22c3-4585-89ff-8fbf230b35b5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:20:17.4324317-03:00","Properties":{}}
+DEBUG 2018-04-23 18:20:17,467 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fc9cf86b-22c3-4585-89ff-8fbf230b35b5
+DEBUG 2018-04-23 18:20:36,211 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fc9cf86b-22c3-4585-89ff-8fbf230b35b5
+DEBUG 2018-04-23 18:20:37,232 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d3b87c73-e310-42be-aadc-98c42d2e40fd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:20:37.2325835-03:00","Properties":{}}
+DEBUG 2018-04-23 18:20:37,245 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d3b87c73-e310-42be-aadc-98c42d2e40fd
+DEBUG 2018-04-23 18:20:46,770 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: edc0d6d3-fc9b-4012-ba8e-ad0d6a129e41
+DEBUG 2018-04-23 18:22:20,969 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d3b87c73-e310-42be-aadc-98c42d2e40fd
+DEBUG 2018-04-23 18:22:21,863 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"45fef1fd-d56a-4e22-91b2-27d7b43976cc","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:22:21.8636616-03:00","Properties":{}}
+DEBUG 2018-04-23 18:22:21,873 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 45fef1fd-d56a-4e22-91b2-27d7b43976cc
+DEBUG 2018-04-23 18:24:32,652 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 45fef1fd-d56a-4e22-91b2-27d7b43976cc
+DEBUG 2018-04-23 18:24:34,850 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"104b40a1-dc7b-4053-a869-8aed4503d751","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:24:34.8503905-03:00","Properties":{}}
+DEBUG 2018-04-23 18:24:34,889 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 104b40a1-dc7b-4053-a869-8aed4503d751
+DEBUG 2018-04-23 18:25:25,827 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 104b40a1-dc7b-4053-a869-8aed4503d751
+DEBUG 2018-04-23 18:25:28,128 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"72d3be95-2d6f-42f8-9393-7dfbe516b848","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:25:28.1284865-03:00","Properties":{}}
+DEBUG 2018-04-23 18:25:28,150 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 72d3be95-2d6f-42f8-9393-7dfbe516b848
+DEBUG 2018-04-23 18:26:42,179 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 72d3be95-2d6f-42f8-9393-7dfbe516b848
+DEBUG 2018-04-23 18:26:44,511 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8add690c-af13-4f8c-a63c-88eb543302dc","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:26:44.5119238-03:00","Properties":{}}
+DEBUG 2018-04-23 18:26:44,528 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8add690c-af13-4f8c-a63c-88eb543302dc
+WARN  2018-04-23 18:28:46,052 [17   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2018-04-23 18:28:54,465 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7358682e-87c7-437d-9323-9c9a6cc206a7","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:28:54.4654755-03:00","Properties":{}}
+DEBUG 2018-04-23 18:28:54,521 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7358682e-87c7-437d-9323-9c9a6cc206a7
+DEBUG 2018-04-23 18:29:11,631 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7358682e-87c7-437d-9323-9c9a6cc206a7
+DEBUG 2018-04-23 18:29:13,054 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0f75efc5-44ed-466b-8dac-cbd15a0edce4","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:29:13.0545574-03:00","Properties":{}}
+DEBUG 2018-04-23 18:29:13,062 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0f75efc5-44ed-466b-8dac-cbd15a0edce4
+DEBUG 2018-04-23 18:29:22,663 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8add690c-af13-4f8c-a63c-88eb543302dc
+DEBUG 2018-04-23 18:31:13,447 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0f75efc5-44ed-466b-8dac-cbd15a0edce4
+DEBUG 2018-04-23 18:31:16,947 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7c4e5825-47d9-4be3-bbee-67e837b0556a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:31:16.9477542-03:00","Properties":{}}
+DEBUG 2018-04-23 18:31:16,976 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7c4e5825-47d9-4be3-bbee-67e837b0556a
+DEBUG 2018-04-23 18:31:53,250 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7c4e5825-47d9-4be3-bbee-67e837b0556a
+DEBUG 2018-04-23 18:31:56,126 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8d9d3eae-3f56-413d-bde0-7f7bf46554db","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:31:56.1260306-03:00","Properties":{}}
+DEBUG 2018-04-23 18:31:56,204 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8d9d3eae-3f56-413d-bde0-7f7bf46554db
+DEBUG 2018-04-23 18:31:59,907 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8d9d3eae-3f56-413d-bde0-7f7bf46554db
+DEBUG 2018-04-23 18:32:03,021 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"330d1fa6-415f-4911-b364-556fb6e395dd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:32:03.021432-03:00","Properties":{}}
+DEBUG 2018-04-23 18:32:03,044 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 330d1fa6-415f-4911-b364-556fb6e395dd
+DEBUG 2018-04-23 18:33:23,165 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 330d1fa6-415f-4911-b364-556fb6e395dd
+DEBUG 2018-04-23 18:33:25,959 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"cb0fb5e6-26e0-4f83-aba1-f399ce9405d8","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:33:25.9582506-03:00","Properties":{}}
+DEBUG 2018-04-23 18:33:25,995 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: cb0fb5e6-26e0-4f83-aba1-f399ce9405d8
+DEBUG 2018-04-23 18:33:30,336 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: cb0fb5e6-26e0-4f83-aba1-f399ce9405d8
+DEBUG 2018-04-23 18:33:34,629 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0e73a822-3da8-4f1a-9a98-76ad67bcd651","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:33:34.6297545-03:00","Properties":{}}
+DEBUG 2018-04-23 18:33:34,795 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0e73a822-3da8-4f1a-9a98-76ad67bcd651
+DEBUG 2018-04-23 18:36:17,460 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0e73a822-3da8-4f1a-9a98-76ad67bcd651
+DEBUG 2018-04-23 18:36:19,175 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d1e24da5-beae-4e66-b580-308a91c74b32","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:36:19.1753158-03:00","Properties":{}}
+DEBUG 2018-04-23 18:36:19,421 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d1e24da5-beae-4e66-b580-308a91c74b32
+DEBUG 2018-04-23 18:36:26,482 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d1e24da5-beae-4e66-b580-308a91c74b32
+DEBUG 2018-04-23 18:36:27,920 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5adec59f-26c1-4521-83f8-fe062260e705","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:36:27.9208235-03:00","Properties":{}}
+DEBUG 2018-04-23 18:36:28,020 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5adec59f-26c1-4521-83f8-fe062260e705
+DEBUG 2018-04-23 18:36:57,201 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5adec59f-26c1-4521-83f8-fe062260e705
+DEBUG 2018-04-23 18:36:59,144 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8b9cca70-1587-4f5c-a0ca-176b15aaf1aa","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:36:59.1446381-03:00","Properties":{}}
+DEBUG 2018-04-23 18:36:59,165 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8b9cca70-1587-4f5c-a0ca-176b15aaf1aa
+DEBUG 2018-04-23 18:37:12,527 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8b9cca70-1587-4f5c-a0ca-176b15aaf1aa
+DEBUG 2018-04-23 18:37:16,451 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"430f3827-9e3a-48f7-ac35-a2694a64f912","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:37:16.4516444-03:00","Properties":{}}
+DEBUG 2018-04-23 18:37:16,604 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 430f3827-9e3a-48f7-ac35-a2694a64f912
+DEBUG 2018-04-23 18:37:51,193 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 430f3827-9e3a-48f7-ac35-a2694a64f912
+DEBUG 2018-04-23 18:37:58,584 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"aec673b7-35cc-4e8e-9e8b-3f8b06255d6b","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:37:58.584092-03:00","Properties":{}}
+DEBUG 2018-04-23 18:37:58,606 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: aec673b7-35cc-4e8e-9e8b-3f8b06255d6b
+DEBUG 2018-04-23 18:38:56,914 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: aec673b7-35cc-4e8e-9e8b-3f8b06255d6b
+DEBUG 2018-04-23 18:38:59,416 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1a32dbba-cdc4-4d90-a375-7cd545e820bc","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:38:59.4156279-03:00","Properties":{}}
+DEBUG 2018-04-23 18:38:59,450 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1a32dbba-cdc4-4d90-a375-7cd545e820bc
+DEBUG 2018-04-23 18:40:04,257 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1a32dbba-cdc4-4d90-a375-7cd545e820bc
+DEBUG 2018-04-23 18:40:09,450 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"affc755d-f282-4310-acc5-3e991fd51168","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:40:09.449698-03:00","Properties":{}}
+DEBUG 2018-04-23 18:40:09,468 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: affc755d-f282-4310-acc5-3e991fd51168
+DEBUG 2018-04-23 18:40:37,623 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: affc755d-f282-4310-acc5-3e991fd51168
+DEBUG 2018-04-23 18:40:39,506 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0892b3b4-ce9d-47fd-8107-0562da6cdbce","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:40:39.5064429-03:00","Properties":{}}
+DEBUG 2018-04-23 18:40:39,600 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0892b3b4-ce9d-47fd-8107-0562da6cdbce
+DEBUG 2018-04-23 18:41:16,702 [13   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-23 18:41:16,704 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:41:16,704 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:41:16,704 [13   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-23 18:41:25,544 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-23 18:41:28,167 [28   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-23 18:41:28,177 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,181 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,181 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,181 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,181 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,182 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,182 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,182 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,183 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,183 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,183 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,183 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,183 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,184 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,184 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,184 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,184 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:28,191 [28   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-23 18:41:30,608 [28   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:41:30,608 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:41:30,608 [28   ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:41:30,608 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:41:31,551 [28   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:41:33,777 [28   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-23 18:41:33,808 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-23 18:41:33,827 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-23 18:41:33,834 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-23 18:41:33,839 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-23 18:41:34,126 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:41:34,177 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-23 18:41:34,177 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-23 18:41:34,178 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-23 18:41:34,178 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-23 18:41:34,192 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-23 18:41:34,193 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-23 18:41:36,862 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-23 18:41:36,863 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-23 18:41:36,865 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-23 18:41:36,868 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-23 18:41:36,870 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-23 18:41:36,871 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-23 18:41:36,873 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-23 18:42:00,382 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"0892b3b4-ce9d-47fd-8107-0562da6cdbce","IpAddress":null,"TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:42:00.3531396-03:00","Properties":{}}
+DEBUG 2018-04-23 18:42:00,973 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3bcd914c-033d-44f7-99eb-3775665fae2c","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:42:00.9721754-03:00","Properties":{}}
+DEBUG 2018-04-23 18:42:01,108 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3bcd914c-033d-44f7-99eb-3775665fae2c
+DEBUG 2018-04-23 18:42:07,722 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b6e1e699-a467-4c22-9f21-e2996cbdebee","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:42:07.7225681-03:00","Properties":{}}
+DEBUG 2018-04-23 18:42:07,777 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b6e1e699-a467-4c22-9f21-e2996cbdebee
+DEBUG 2018-04-23 18:42:27,890 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b6e1e699-a467-4c22-9f21-e2996cbdebee
+DEBUG 2018-04-23 18:42:28,892 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4806c7e8-af0b-4039-a4cd-588167252f37","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:42:28.8927986-03:00","Properties":{}}
+DEBUG 2018-04-23 18:42:28,938 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4806c7e8-af0b-4039-a4cd-588167252f37
+DEBUG 2018-04-23 18:42:40,226 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0892b3b4-ce9d-47fd-8107-0562da6cdbce
+DEBUG 2018-04-23 18:42:58,188 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4806c7e8-af0b-4039-a4cd-588167252f37
+DEBUG 2018-04-23 18:42:58,800 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"83999a1a-ab7b-4a71-a912-fc25a0ccc0f5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:42:58.800537-03:00","Properties":{}}
+DEBUG 2018-04-23 18:42:58,818 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 83999a1a-ab7b-4a71-a912-fc25a0ccc0f5
+DEBUG 2018-04-23 18:45:14,631 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 83999a1a-ab7b-4a71-a912-fc25a0ccc0f5
+DEBUG 2018-04-23 18:45:15,675 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"08dd4131-1e50-4c59-b0dd-771048ed9fd8","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:45:15.6754906-03:00","Properties":{}}
+DEBUG 2018-04-23 18:45:15,685 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 08dd4131-1e50-4c59-b0dd-771048ed9fd8
+DEBUG 2018-04-23 18:46:49,103 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 08dd4131-1e50-4c59-b0dd-771048ed9fd8
+DEBUG 2018-04-23 18:46:56,224 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ff13ee5c-4261-45df-8384-69ca63cd1a6f","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:46:56.2243331-03:00","Properties":{}}
+DEBUG 2018-04-23 18:46:56,258 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ff13ee5c-4261-45df-8384-69ca63cd1a6f
+DEBUG 2018-04-23 18:47:15,023 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ff13ee5c-4261-45df-8384-69ca63cd1a6f
+DEBUG 2018-04-23 18:47:15,782 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"25c083d4-8a3e-4d11-a161-9d4160ae650a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:47:15.7824684-03:00","Properties":{}}
+DEBUG 2018-04-23 18:47:15,796 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 25c083d4-8a3e-4d11-a161-9d4160ae650a
+DEBUG 2018-04-23 18:47:47,766 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 25c083d4-8a3e-4d11-a161-9d4160ae650a
+DEBUG 2018-04-23 18:47:48,558 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"82708fd9-fdbe-4ee2-9440-983af1b1a588","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:47:48.5583743-03:00","Properties":{}}
+DEBUG 2018-04-23 18:47:48,568 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 82708fd9-fdbe-4ee2-9440-983af1b1a588
+DEBUG 2018-04-23 18:48:12,548 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 82708fd9-fdbe-4ee2-9440-983af1b1a588
+DEBUG 2018-04-23 18:48:14,250 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"608ea5f8-9f22-48d3-a5ab-4980c38b08d7","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:48:14.2508655-03:00","Properties":{}}
+DEBUG 2018-04-23 18:48:14,367 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 608ea5f8-9f22-48d3-a5ab-4980c38b08d7
+DEBUG 2018-04-23 18:48:55,615 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 608ea5f8-9f22-48d3-a5ab-4980c38b08d7
+DEBUG 2018-04-23 18:48:56,662 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4d4d39df-80dd-40fb-860e-dcccdd1cadbf","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:48:56.6613315-03:00","Properties":{}}
+DEBUG 2018-04-23 18:48:56,690 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4d4d39df-80dd-40fb-860e-dcccdd1cadbf
+DEBUG 2018-04-23 18:49:17,709 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4d4d39df-80dd-40fb-860e-dcccdd1cadbf
+DEBUG 2018-04-23 18:49:18,862 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9b1f7808-51fa-4918-85bc-438a061e9ba5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:49:18.8616215-03:00","Properties":{}}
+DEBUG 2018-04-23 18:49:18,878 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9b1f7808-51fa-4918-85bc-438a061e9ba5
+DEBUG 2018-04-23 18:51:33,804 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9b1f7808-51fa-4918-85bc-438a061e9ba5
+ERROR 2018-04-23 18:51:34,388 [16   ] nHandling.AbpApiExceptionFilterAttribute - A operação foi cancelada.
+System.OperationCanceledException: A operação foi cancelada.
+   em System.Threading.CancellationToken.ThrowOperationCanceledException()
+   em System.Web.Http.HostAuthenticationFilter.<AuthenticateAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+DEBUG 2018-04-23 18:51:34,856 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b273ac41-79f9-4af0-aac2-63dbec75d242","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:51:34.8565231-03:00","Properties":{}}
+DEBUG 2018-04-23 18:51:34,869 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b273ac41-79f9-4af0-aac2-63dbec75d242
+DEBUG 2018-04-23 18:53:29,415 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b273ac41-79f9-4af0-aac2-63dbec75d242
+DEBUG 2018-04-23 18:53:30,765 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6119cc81-6e1c-45fe-8cd5-25767ce00ada","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:53:30.765257-03:00","Properties":{}}
+DEBUG 2018-04-23 18:53:30,774 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6119cc81-6e1c-45fe-8cd5-25767ce00ada
+DEBUG 2018-04-23 18:54:38,000 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6119cc81-6e1c-45fe-8cd5-25767ce00ada
+DEBUG 2018-04-23 18:54:38,920 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b742c8b6-cb4a-4932-b244-b2bce3df0f74","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:54:38.9202195-03:00","Properties":{}}
+DEBUG 2018-04-23 18:54:38,926 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b742c8b6-cb4a-4932-b244-b2bce3df0f74
+DEBUG 2018-04-23 18:56:21,975 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b742c8b6-cb4a-4932-b244-b2bce3df0f74
+DEBUG 2018-04-23 18:56:23,158 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"543bec9e-9949-4e5f-8b38-d5f8269b5f7b","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:56:23.158275-03:00","Properties":{}}
+DEBUG 2018-04-23 18:56:23,167 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 543bec9e-9949-4e5f-8b38-d5f8269b5f7b
+DEBUG 2018-04-23 18:57:14,306 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 543bec9e-9949-4e5f-8b38-d5f8269b5f7b
+DEBUG 2018-04-23 18:57:15,183 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7a6eebd8-1ac0-4974-b3c9-3b435d162bab","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:57:15.1832965-03:00","Properties":{}}
+DEBUG 2018-04-23 18:57:15,189 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7a6eebd8-1ac0-4974-b3c9-3b435d162bab
+DEBUG 2018-04-23 18:58:18,838 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7a6eebd8-1ac0-4974-b3c9-3b435d162bab
+DEBUG 2018-04-23 18:58:20,008 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5e38209b-166c-4fe2-b21d-912cb528075a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:58:20.0080659-03:00","Properties":{}}
+DEBUG 2018-04-23 18:58:20,015 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5e38209b-166c-4fe2-b21d-912cb528075a
+DEBUG 2018-04-23 18:58:50,821 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5e38209b-166c-4fe2-b21d-912cb528075a
+DEBUG 2018-04-23 18:58:51,790 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"26cbc13d-f477-473f-b5a1-176b64c737ec","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T18:58:51.790912-03:00","Properties":{}}
+DEBUG 2018-04-23 18:58:51,816 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 26cbc13d-f477-473f-b5a1-176b64c737ec
+DEBUG 2018-04-23 18:59:07,030 [15   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-23 18:59:07,032 [15   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:59:07,033 [15   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:59:07,033 [15   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-23 18:59:13,178 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-23 18:59:14,637 [28   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-23 18:59:14,646 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,648 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,648 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,648 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,649 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,649 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,649 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,650 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,650 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,650 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,650 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,650 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,651 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,651 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,651 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,651 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,651 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:14,655 [28   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-23 18:59:17,819 [28   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:59:17,820 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:59:17,820 [28   ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:59:17,820 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 18:59:18,796 [28   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 18:59:20,937 [28   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-23 18:59:20,959 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-23 18:59:20,970 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-23 18:59:20,976 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-23 18:59:20,982 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-23 18:59:21,097 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 18:59:21,133 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-23 18:59:21,133 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-23 18:59:21,134 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-23 18:59:21,134 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-23 18:59:21,134 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-23 18:59:21,134 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-23 18:59:21,134 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-23 18:59:21,134 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-23 18:59:21,135 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-23 18:59:23,537 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-23 18:59:23,538 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-23 18:59:23,540 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-23 18:59:23,541 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-23 18:59:23,542 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-23 18:59:23,544 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-23 18:59:23,545 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-23 18:59:44,009 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c8985f3e-cc44-4a5e-9762-76ff54a34793","IpAddress":"192.168.179.1","TenantId":null,"UserId":null,"ConnectTime":"2018-04-23T18:59:43.9889441-03:00","Properties":{}}
+WARN  2018-04-23 19:00:05,712 [15   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2018-04-23 19:00:09,785 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c8985f3e-cc44-4a5e-9762-76ff54a34793
+WARN  2018-04-23 19:00:22,498 [27   ] ity.AntiForgery.AbpMvcAntiForgeryManager - The provided anti-forgery token was meant for a different claims-based user than the current user.
+WARN  2018-04-23 19:00:22,499 [27   ] rity.AntiForgery.AbpAntiForgeryMvcFilter - Empty or invalid anti forgery header token.
+WARN  2018-04-23 19:00:22,499 [27   ] rity.AntiForgery.AbpAntiForgeryMvcFilter - Requested URI: http://localhost:6234/Account/Login?ReturnUrl=%2F
+DEBUG 2018-04-23 19:00:23,523 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1ec4e220-2959-4445-9a02-00886afda3dd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:00:23.5232426-03:00","Properties":{}}
+DEBUG 2018-04-23 19:00:23,562 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1ec4e220-2959-4445-9a02-00886afda3dd
+DEBUG 2018-04-23 19:01:50,841 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1ec4e220-2959-4445-9a02-00886afda3dd
+DEBUG 2018-04-23 19:01:51,506 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4bb54cf8-5710-4560-a4fb-fe059e2fd943","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:01:51.5063545-03:00","Properties":{}}
+DEBUG 2018-04-23 19:01:51,540 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4bb54cf8-5710-4560-a4fb-fe059e2fd943
+DEBUG 2018-04-23 19:03:20,001 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4bb54cf8-5710-4560-a4fb-fe059e2fd943
+DEBUG 2018-04-23 19:03:20,711 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a2b506d2-2486-4f1b-b264-9b63bf9986d1","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:03:20.711538-03:00","Properties":{}}
+DEBUG 2018-04-23 19:03:20,725 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a2b506d2-2486-4f1b-b264-9b63bf9986d1
+DEBUG 2018-04-23 19:03:52,658 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a2b506d2-2486-4f1b-b264-9b63bf9986d1
+DEBUG 2018-04-23 19:03:53,390 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"30e49c42-6a24-4c66-bff2-4dd81f5fb65a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:03:53.390437-03:00","Properties":{}}
+DEBUG 2018-04-23 19:03:53,408 [29   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 30e49c42-6a24-4c66-bff2-4dd81f5fb65a
+DEBUG 2018-04-23 19:07:28,857 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 30e49c42-6a24-4c66-bff2-4dd81f5fb65a
+DEBUG 2018-04-23 19:07:29,796 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8a392856-adeb-40a9-8603-4301237306e8","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:07:29.796011-03:00","Properties":{}}
+DEBUG 2018-04-23 19:07:29,808 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8a392856-adeb-40a9-8603-4301237306e8
+DEBUG 2018-04-23 19:07:44,683 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8a392856-adeb-40a9-8603-4301237306e8
+DEBUG 2018-04-23 19:07:45,317 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5b461af4-de46-43b5-a735-e9611706dc03","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:07:45.3179133-03:00","Properties":{}}
+DEBUG 2018-04-23 19:07:45,328 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5b461af4-de46-43b5-a735-e9611706dc03
+DEBUG 2018-04-23 19:07:59,741 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5b461af4-de46-43b5-a735-e9611706dc03
+DEBUG 2018-04-23 19:08:00,510 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b01e65ab-e0c6-4def-9054-a0df7eea0532","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:08:00.5107958-03:00","Properties":{}}
+DEBUG 2018-04-23 19:08:00,537 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b01e65ab-e0c6-4def-9054-a0df7eea0532
+DEBUG 2018-04-23 19:08:27,186 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b01e65ab-e0c6-4def-9054-a0df7eea0532
+DEBUG 2018-04-23 19:08:27,871 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"550a1559-b476-49af-9926-71d61876192a","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:08:27.8713864-03:00","Properties":{}}
+DEBUG 2018-04-23 19:08:27,883 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 550a1559-b476-49af-9926-71d61876192a
+DEBUG 2018-04-23 19:09:15,337 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 550a1559-b476-49af-9926-71d61876192a
+DEBUG 2018-04-23 19:09:16,026 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"36566cd0-1a59-4f72-ae38-d30b328fb2a5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:09:16.0261835-03:00","Properties":{}}
+DEBUG 2018-04-23 19:09:16,035 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 36566cd0-1a59-4f72-ae38-d30b328fb2a5
+DEBUG 2018-04-23 19:09:23,243 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 36566cd0-1a59-4f72-ae38-d30b328fb2a5
+DEBUG 2018-04-23 19:09:23,735 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f0af81ca-c1ac-4fd9-8f1d-2ecbf4a2e749","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:09:23.7356326-03:00","Properties":{}}
+DEBUG 2018-04-23 19:09:23,743 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f0af81ca-c1ac-4fd9-8f1d-2ecbf4a2e749
+DEBUG 2018-04-23 19:15:00,183 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f0af81ca-c1ac-4fd9-8f1d-2ecbf4a2e749
+DEBUG 2018-04-23 19:15:00,862 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"746278dc-aa94-4fdb-b470-6f0c2d7dee24","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:15:00.8622211-03:00","Properties":{}}
+DEBUG 2018-04-23 19:15:00,874 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 746278dc-aa94-4fdb-b470-6f0c2d7dee24
+DEBUG 2018-04-23 19:17:30,335 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 746278dc-aa94-4fdb-b470-6f0c2d7dee24
+DEBUG 2018-04-23 19:17:31,890 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0151b618-c374-45ae-8131-8e908c08bea5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:17:31.8909962-03:00","Properties":{}}
+DEBUG 2018-04-23 19:17:31,905 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0151b618-c374-45ae-8131-8e908c08bea5
+DEBUG 2018-04-23 19:18:12,219 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0151b618-c374-45ae-8131-8e908c08bea5
+DEBUG 2018-04-23 19:18:13,571 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0382339b-3f94-43b1-bd59-b32ad349861b","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:18:13.5714183-03:00","Properties":{}}
+DEBUG 2018-04-23 19:18:13,601 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0382339b-3f94-43b1-bd59-b32ad349861b
+DEBUG 2018-04-23 19:18:58,274 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0382339b-3f94-43b1-bd59-b32ad349861b
+DEBUG 2018-04-23 19:18:59,675 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e8994223-36a2-4a10-baf1-68ddd70c75a3","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:18:59.6750972-03:00","Properties":{}}
+DEBUG 2018-04-23 19:18:59,717 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e8994223-36a2-4a10-baf1-68ddd70c75a3
+DEBUG 2018-04-23 19:19:25,538 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e8994223-36a2-4a10-baf1-68ddd70c75a3
+DEBUG 2018-04-23 19:19:26,097 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e08776e7-9fa5-4c1e-84d1-27aaf024f8a5","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:19:26.0976325-03:00","Properties":{}}
+DEBUG 2018-04-23 19:19:26,139 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e08776e7-9fa5-4c1e-84d1-27aaf024f8a5
+DEBUG 2018-04-23 19:20:22,662 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e08776e7-9fa5-4c1e-84d1-27aaf024f8a5
+DEBUG 2018-04-23 19:20:26,610 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"81f5ad3f-d0c0-4151-8846-c859b6a70da8","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:20:26.61015-03:00","Properties":{}}
+DEBUG 2018-04-23 19:20:26,627 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 81f5ad3f-d0c0-4151-8846-c859b6a70da8
+DEBUG 2018-04-23 19:20:42,694 [17   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-23 19:20:42,696 [17   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 19:20:42,696 [17   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 19:20:42,696 [17   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-23 19:20:48,449 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-23 19:20:49,379 [18   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-23 19:20:49,390 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,390 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,391 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,391 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,391 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,391 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,392 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,392 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,392 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,393 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,393 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,393 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,393 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,393 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,394 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,394 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,394 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:49,399 [18   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-23 19:20:50,526 [18   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 19:20:50,526 [18   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 19:20:50,526 [18   ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 19:20:50,526 [18   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 19:20:51,024 [18   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 19:20:52,335 [18   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-23 19:20:52,343 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-23 19:20:52,356 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-23 19:20:52,361 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-23 19:20:52,366 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-23 19:20:52,504 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 19:20:52,543 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-23 19:20:52,543 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-23 19:20:52,544 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-23 19:20:52,545 [18   ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-23 19:20:54,721 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-23 19:20:54,723 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-23 19:20:54,724 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-23 19:20:54,725 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-23 19:20:54,727 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-23 19:20:54,728 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-23 19:20:54,729 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-23 19:21:07,955 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected (on reconnected event): {"ConnectionId":"81f5ad3f-d0c0-4151-8846-c859b6a70da8","IpAddress":null,"TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:21:07.9345503-03:00","Properties":{}}
+DEBUG 2018-04-23 19:21:10,519 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 81f5ad3f-d0c0-4151-8846-c859b6a70da8
+DEBUG 2018-04-23 19:21:15,074 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3a446fb9-430d-4587-ac33-462352d385a2","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:21:15.0749651-03:00","Properties":{}}
+DEBUG 2018-04-23 19:21:15,110 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3a446fb9-430d-4587-ac33-462352d385a2
+DEBUG 2018-04-23 19:27:31,183 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3a446fb9-430d-4587-ac33-462352d385a2
+DEBUG 2018-04-23 19:27:32,169 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bc01ceb6-1516-431e-b203-115b18c7a5de","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:27:32.169877-03:00","Properties":{}}
+DEBUG 2018-04-23 19:27:32,184 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bc01ceb6-1516-431e-b203-115b18c7a5de
+DEBUG 2018-04-23 19:28:25,036 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bc01ceb6-1516-431e-b203-115b18c7a5de
+DEBUG 2018-04-23 19:28:26,092 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"539f1f63-083d-4b55-9b8f-87a18c675660","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:28:26.0920102-03:00","Properties":{}}
+DEBUG 2018-04-23 19:28:26,119 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 539f1f63-083d-4b55-9b8f-87a18c675660
+DEBUG 2018-04-23 19:29:26,210 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 539f1f63-083d-4b55-9b8f-87a18c675660
+DEBUG 2018-04-23 19:29:26,922 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"db206d10-8f22-4f9a-a974-5b535fe756e3","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:29:26.9225446-03:00","Properties":{}}
+DEBUG 2018-04-23 19:29:26,955 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: db206d10-8f22-4f9a-a974-5b535fe756e3
+DEBUG 2018-04-23 19:29:51,364 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: db206d10-8f22-4f9a-a974-5b535fe756e3
+DEBUG 2018-04-23 19:29:52,028 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f4313243-e14a-4f8a-bbf2-273017078dc9","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:29:52.027004-03:00","Properties":{}}
+DEBUG 2018-04-23 19:29:52,039 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f4313243-e14a-4f8a-bbf2-273017078dc9
+DEBUG 2018-04-23 19:30:09,254 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f4313243-e14a-4f8a-bbf2-273017078dc9
+DEBUG 2018-04-23 19:30:09,794 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8839088d-e5ea-4796-b4fe-e72b0fb5dc25","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:30:09.7940366-03:00","Properties":{}}
+DEBUG 2018-04-23 19:30:09,805 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8839088d-e5ea-4796-b4fe-e72b0fb5dc25
+DEBUG 2018-04-23 19:30:44,233 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8839088d-e5ea-4796-b4fe-e72b0fb5dc25
+DEBUG 2018-04-23 19:30:45,080 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1ea85f1b-b22a-4307-b2ef-1f7e5ab758f6","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T19:30:45.0800861-03:00","Properties":{}}
+DEBUG 2018-04-23 19:30:45,091 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1ea85f1b-b22a-4307-b2ef-1f7e5ab758f6
+DEBUG 2018-04-23 20:10:59,015 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-23 20:10:59,096 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-23 20:10:59,103 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:10:59,164 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-23 20:11:00,001 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 20:11:00,001 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 20:11:00,001 [1    ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 20:11:00,001 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-23 20:11:00,540 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-23 20:11:13,365 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-23 20:11:13,515 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-23 20:11:13,548 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-23 20:11:13,587 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-23 20:11:13,609 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-23 20:11:13,729 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-23 20:11:13,864 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-23 20:11:13,864 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-23 20:11:13,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-23 20:11:13,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-23 20:11:13,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-23 20:11:13,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-23 20:11:13,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-23 20:11:13,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-23 20:11:16,236 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-23 20:11:16,237 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-23 20:11:16,238 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-23 20:11:16,239 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-23 20:11:16,241 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-23 20:11:16,242 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-23 20:11:16,243 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-23 20:11:18,385 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f703e7b5-14c7-4688-bb47-277de25792c2","IpAddress":"192.168.179.1","TenantId":null,"UserId":null,"ConnectTime":"2018-04-23T20:11:18.3664758-03:00","Properties":{}}
+WARN  2018-04-23 20:11:39,699 [9    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2018-04-23 20:11:52,705 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f703e7b5-14c7-4688-bb47-277de25792c2
+WARN  2018-04-23 20:12:05,678 [12   ] ity.AntiForgery.AbpMvcAntiForgeryManager - The provided anti-forgery token was meant for a different claims-based user than the current user.
+WARN  2018-04-23 20:12:05,679 [12   ] rity.AntiForgery.AbpAntiForgeryMvcFilter - Empty or invalid anti forgery header token.
+WARN  2018-04-23 20:12:05,679 [12   ] rity.AntiForgery.AbpAntiForgeryMvcFilter - Requested URI: http://localhost:6234/Account/Login?ReturnUrl=%2F
+DEBUG 2018-04-23 20:12:08,723 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fe392880-fc92-468c-aade-1a8879661705","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:12:08.7234031-03:00","Properties":{}}
+DEBUG 2018-04-23 20:12:08,773 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fe392880-fc92-468c-aade-1a8879661705
+DEBUG 2018-04-23 20:13:10,489 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fe392880-fc92-468c-aade-1a8879661705
+DEBUG 2018-04-23 20:13:14,167 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"47a2e6ef-926c-4830-8619-7d5a51973536","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:13:14.1672046-03:00","Properties":{}}
+DEBUG 2018-04-23 20:13:14,285 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 47a2e6ef-926c-4830-8619-7d5a51973536
+DEBUG 2018-04-23 20:13:40,487 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 47a2e6ef-926c-4830-8619-7d5a51973536
+DEBUG 2018-04-23 20:13:43,900 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"61910685-d69c-4804-a6a9-c8d7eac5e75d","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:13:43.9009322-03:00","Properties":{}}
+DEBUG 2018-04-23 20:13:43,914 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 61910685-d69c-4804-a6a9-c8d7eac5e75d
+DEBUG 2018-04-23 20:13:51,706 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 61910685-d69c-4804-a6a9-c8d7eac5e75d
+DEBUG 2018-04-23 20:13:53,406 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a73d0730-e260-4976-b3c8-00b9411c81f2","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:13:53.4064853-03:00","Properties":{}}
+DEBUG 2018-04-23 20:13:53,438 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a73d0730-e260-4976-b3c8-00b9411c81f2
+DEBUG 2018-04-23 20:14:35,500 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a73d0730-e260-4976-b3c8-00b9411c81f2
+DEBUG 2018-04-23 20:14:37,887 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"94c6c2d5-52b1-4b93-b7d7-66764d81f427","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:14:37.8870698-03:00","Properties":{}}
+DEBUG 2018-04-23 20:14:37,897 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 94c6c2d5-52b1-4b93-b7d7-66764d81f427
+DEBUG 2018-04-23 20:14:45,773 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5d677917-a484-4147-9585-70a8ab81f207","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:14:45.7735287-03:00","Properties":{}}
+DEBUG 2018-04-23 20:14:45,789 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5d677917-a484-4147-9585-70a8ab81f207
+DEBUG 2018-04-23 20:15:13,571 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 94c6c2d5-52b1-4b93-b7d7-66764d81f427
+DEBUG 2018-04-23 20:15:29,814 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5d677917-a484-4147-9585-70a8ab81f207
+DEBUG 2018-04-23 20:15:32,024 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3440590c-5471-40d7-b1e6-ece44e716dcd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:15:32.024215-03:00","Properties":{}}
+DEBUG 2018-04-23 20:15:32,030 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3440590c-5471-40d7-b1e6-ece44e716dcd
+DEBUG 2018-04-23 20:16:36,763 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3440590c-5471-40d7-b1e6-ece44e716dcd
+DEBUG 2018-04-23 20:16:38,266 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bf3098af-638c-4325-bf53-f5de6be65535","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:16:38.2660643-03:00","Properties":{}}
+DEBUG 2018-04-23 20:16:38,280 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bf3098af-638c-4325-bf53-f5de6be65535
+DEBUG 2018-04-23 20:16:43,132 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bf3098af-638c-4325-bf53-f5de6be65535
+DEBUG 2018-04-23 20:16:44,569 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8bdef3e1-690d-47f6-974b-e9f4cd57f349","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:16:44.5694306-03:00","Properties":{}}
+DEBUG 2018-04-23 20:16:44,593 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8bdef3e1-690d-47f6-974b-e9f4cd57f349
+DEBUG 2018-04-23 20:16:48,164 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8bdef3e1-690d-47f6-974b-e9f4cd57f349
+DEBUG 2018-04-23 20:16:49,710 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a49acfd7-f011-4a03-9dcf-e8a602ac0f4f","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:16:49.7107289-03:00","Properties":{}}
+DEBUG 2018-04-23 20:16:49,715 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a49acfd7-f011-4a03-9dcf-e8a602ac0f4f
+DEBUG 2018-04-23 20:16:51,311 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a49acfd7-f011-4a03-9dcf-e8a602ac0f4f
+DEBUG 2018-04-23 20:16:52,558 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"60ab9d75-3da9-409d-b51f-8633b20d018c","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:16:52.5588961-03:00","Properties":{}}
+DEBUG 2018-04-23 20:16:52,564 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 60ab9d75-3da9-409d-b51f-8633b20d018c
+DEBUG 2018-04-23 20:16:58,954 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"cd6b8206-6731-46ec-955a-f715a079c529","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-23T20:16:58.9542681-03:00","Properties":{}}
+DEBUG 2018-04-23 20:16:58,966 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: cd6b8206-6731-46ec-955a-f715a079c529
+DEBUG 2018-04-23 20:17:28,866 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 60ab9d75-3da9-409d-b51f-8633b20d018c

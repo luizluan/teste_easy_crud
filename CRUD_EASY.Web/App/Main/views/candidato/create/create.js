@@ -2,12 +2,12 @@
 
     'use strict';
 
-    var controllerId = "app.views.candidato as vm";
+    var controllerId = "app.views.candidato";
 
 
     angular.module('app').controller(controllerId,
-    [ '$scope',
-        function ($scope) {
+    [ 
+        function () {
 
 
 
