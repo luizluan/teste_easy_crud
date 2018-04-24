@@ -46,6 +46,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         {
             var candidato = c.MapTo<CandidatoOutput>();
             candidato.Conhecimentos = AtributoDto.GetProperties(c.Conhecimento);
+            candidato.Atributos = AtributoDto.GetAtributos(c.Conhecimento);
             return candidato;
         }
 

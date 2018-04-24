@@ -1,32 +1,52 @@
 ﻿<div ng-controller="app.views.conhecimento as vm">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card" ng-if="vm.isLoad">
             <div class="header">
                 <h2>
-                    Cadastrar Conhecimento
+                    Conhecimentos
                 </h2>
+            </div>
+            <div>
+                <br />
+                <br />
             </div>
 
             <form id="formCreateConhecimento">
                 <div class="input-group" ng-repeat="atributo in vm.atributos">
+                    <span class="input-group-addon">
+
+                    </span>
                     <div class="form-line">
                         <label>{{atributo.nome}}:</label>
                         <br />
                         <div class="md-radiobtn" ng-repeat="i in vm.default" style="display:inline-flex">
                             <div style="display:normal">
-                                <input type="radio" id="{{atributo.nome}}" class="md-radiobtn" style="opacity:unset; position:unset; left:unset" value="{{i}}" name="{{atributo.nome}}">
+                                <input type="radio" id="{{atributo.nome}}" class="md-radiobtn" style="opacity:unset; position:unset; left:unset" value="{{i}}" ng-model="vm.conhecimento[atributo.nome]" name="{{atributo.nome}}">
                                 <br />
                                 <strong>{{i}}</strong>
                             </div>
-
-
                         </div>
                         <br />
-
                     </div>
-                    </div>
+                </div>
 
-</form>
+                <div class="input-group col-lg-4">
+                    <div class="col-lg-8">
+                        <div class="col-lg-5">
+                            <button type="submit" class="btn bg-success btn-parsley text-white pull-left" ng-click="vm.voltar()">
+                                <span class="fa fa-arrow-left text-white"></span>&nbsp;Voltar
+                            </button>
+                        </div>
+                        <div class="col-lg-5">
+                            <button type="submit" class="btn bg-success btn-parsley text-white pull-right" ng-click="vm.salvar()">
+                                <span class="fa fa-save text-white"></span>&nbsp;Salvar
+                            </button>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

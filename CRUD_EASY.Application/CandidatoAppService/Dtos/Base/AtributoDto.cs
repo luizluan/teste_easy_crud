@@ -58,10 +58,10 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
         /// </summary>
         /// <param name="c">Conhecimento</param>
         /// <returns>Lista dos atributos</returns>
-        public static List<AtributoDto> GetAtributos()
+        public static List<AtributoDto> GetAtributos(Conhecimento c = null)
         {
             //É semelhante ao processo ao lado só que ele retorna os atributos ao invés da string concatenada 
-            var  c = new Conhecimento();
+            if(c == null) c = new Conhecimento();
             var properties = c.GetType().GetProperties().Where(e => e.PropertyType.Name != "String" && e.Name != "Id").ToList();
             var atributos = new List<AtributoDto>();
 
