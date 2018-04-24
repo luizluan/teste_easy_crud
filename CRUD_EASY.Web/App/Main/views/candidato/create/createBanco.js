@@ -30,8 +30,14 @@
                 vm.banco = candidatoService.candidato.banco;
 
                 vm.voltar = function () {
-                    candidatoService.etapa = 1;
+                    candidatoService.etapa = 0;
                     $location.path("/candidato");
+                }
+
+                vm.avancar = function () {
+                    candidatoService.etapa = 2;
+                    $location.path("/conhecimento");
+
                 }
             }
         ]);

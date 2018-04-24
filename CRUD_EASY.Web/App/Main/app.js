@@ -77,6 +77,14 @@
                     templateUrl: '/App/Main/views/candidato/create/createBanco.cshtml'
                     
                 });
+
+            $stateProvider
+                .state('conhecimento',
+                {
+                    url: '/conhecimento',
+                    templateUrl: '/App/Main/views/candidato/create/createConhecimento.cshtml'
+
+                });
         }
     ]);
 

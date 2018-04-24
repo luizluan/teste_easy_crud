@@ -2,7 +2,7 @@
 
 
     angular.module('app').factory('candidatoService', ['abp.services.app.candidato','$q',
-        function (candidatoService) {
+        function (candidatoService,$q) {
 
             var _session = {
 
@@ -44,8 +44,9 @@
                     },
 
                     conhecimento: {}
+                  
                 },
-
+                atributos: [],
                 etapa: 0,
 
                 //Método de criação usando promessa 
@@ -68,13 +69,15 @@
 
                 loadAtributos: function () {
 
+                    var atributos = [];
                     var promess = $q.defer();
                     candidatoService.loadAtributos().then(function (response) {
-                        this.candidato.conhecimento = response.data;
+                        atributos = response.data.atributos;
+                        promess.resolve();
                     });
 
                     return $q.all([promess.promise]).then(function () {
-                        return true;
+                        return atributos;
                     });
                 }
 
