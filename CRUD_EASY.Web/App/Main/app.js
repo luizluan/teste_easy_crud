@@ -69,6 +69,14 @@
                     templateUrl: '/App/Main/views/candidato/create/create.cshtml',
                     menu: 'Candidato'
                 });
+
+            $stateProvider
+                .state('banco',
+                {
+                    url: '/banco',
+                    templateUrl: '/App/Main/views/candidato/create/createBanco.cshtml'
+                    
+                });
         }
     ]);
 

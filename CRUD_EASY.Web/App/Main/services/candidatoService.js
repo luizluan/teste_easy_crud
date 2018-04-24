@@ -25,12 +25,12 @@
                         nome: '',
                         agencia: '',
                         tipodeConta: 0,
-                        numerodaConta
+                        numerodaConta:''
                     },
 
                     horarioDisponivel: {
                         quatroHorasDia: false,
-                        quatroaSeisHoraDia: false,
+                        quatroaSeisHorasDia: false,
                         maisdeOitoHorasDia: false,
                         apenasFimSemana: false
                     },
@@ -45,6 +45,8 @@
 
                     conhecimento: {}
                 },
+
+                etapa: 0,
 
                 //Método de criação usando promessa 
                 createOrUpdate: function (candidato) {

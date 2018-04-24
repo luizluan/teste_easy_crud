@@ -1,0 +1,78 @@
+﻿<div ng-controller="app.views.banco as vm">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                   Cadastrar Banco
+                </h2>
+            </div>
+
+            <form id="formCreateBanco">
+
+                <div>
+                    <br />
+                    <br />
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.banco.nome" placeholder="Nome"  autofocus maxlength="100">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.banco.agencia" placeholder="Agência"  autofocus maxlength="20">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-2">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <label>Tipo de Conta</label>
+                    <br />
+                    <select class="form-control" style="width:25%"
+                            ng-options="item.valor  as item.nome for item in vm.tiposdeConta"
+                            ng-model="vm.banco.tipodeConta"></select>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.banco.numerodaConta" placeholder="Número da Conta"  autofocus maxlength="20">
+                    </div>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <div class="col-lg-8">
+                        <div class="col-lg-5">
+                            <button type="submit" class="btn bg-success btn-parsley text-white pull-left" ng-click="vm.voltar()">
+                                <span class="fa fa-arrow-left text-white"></span>&nbsp;Voltar
+                            </button>
+                        </div>
+                       
+
+                        <div class="col-lg-5">
+                            <button type="submit" class="btn bg-success btn-parsley text-white pull-right" ng-click="vm.avancar()">
+                                <span class="fa fa-arrow-right text-white"></span>&nbsp;Avançar
+                            </button>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
