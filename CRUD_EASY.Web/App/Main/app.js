@@ -71,6 +71,14 @@
                 });
 
             $stateProvider
+                .state('searchCandidato',
+                {
+                    url: '/searchCandidato',
+                    templateUrl: '/App/Main/views/candidato/search/searchCandidato.cshtml',
+                    menu: 'Search'
+                });
+
+            $stateProvider
                 .state('banco',
                 {
                     url: '/banco',

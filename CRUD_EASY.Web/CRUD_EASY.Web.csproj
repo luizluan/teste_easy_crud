@@ -436,6 +436,7 @@
     <Content Include="App\Main\views\candidato\create\createBanco.cshtml" />
     <Content Include="App\Main\views\candidato\create\createBanco.js" />
     <Content Include="App\Main\views\candidato\create\createConhecimento.js" />
+    <Content Include="App\Main\views\candidato\search\searchCandidato.js" />
     <Content Include="App\Main\views\directives\autoFocus.js" />
     <Content Include="App\Main\views\directives\enterKey.js" />
     <Content Include="App\Main\views\layout\layout.js" />
@@ -2683,6 +2684,7 @@
     <Content Include="Abp\Framework\styles\abp.less" />
     <Content Include="Abp\Framework\styles\abp.css.map" />
     <Content Include="App\Main\views\candidato\create\createConhecimento.cshtml" />
+    <Content Include="App\Main\views\candidato\search\searchCandidato.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
@@ -3684,7 +3686,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Main\views\candidato\search\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

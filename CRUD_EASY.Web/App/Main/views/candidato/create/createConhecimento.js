@@ -40,7 +40,8 @@
 
                     abp.message.confirm("Tem certeza que dejesa salvar o candidato?",
                        "", function (isConfirm) {
-                            candidatoService.createOrUpdate(candidatoService.candidato).then(function () {
+                           candidatoService.createOrUpdate(candidatoService.candidato).then(function () {
+                               abp.notify.success("Candidato Salvo com Sussesso!!!");
                             });
                         });
 
