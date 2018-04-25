@@ -81,6 +81,20 @@
                     return $q.all([promess.promise]).then(function () {
                         return atributos;
                     });
+                },
+
+                getAll : function (term) {
+
+                    var candidatos = [];
+                    var promess = $q.defer();
+                    candidatoService.getAll({ term: term }).then(function (response) {
+                        candidatos = response.data;
+                        promess.resolve();
+                    });
+
+                    return $q.all([promess.promise]).then(function () {
+                        return candidatos;
+                    });
                 }
 
 

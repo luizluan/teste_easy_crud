@@ -17,10 +17,10 @@
                                 </div>
                                 <div class="col-md-2">
                                     <div class="form-group pull-right">
-                                        <button class="btn bg-success" ng-click="vm.searchAdvanced()" title="Busca Avançada">
+                                        <button class="btn bg-success" ng-click="vm.forcarBusca()" title="Busca Avançada">
                                             <span class="fa fa-search"></span>
                                         </button>
-                                        <button class="btn bg-success" ng-click="vm.go()">
+                                        <button class="btn bg-success" ng-click="vm.criarNovoCandidato()">
                                             <span class="fa fa-user-plus"></span>&nbsp; Criar Novo
                                         </button>
                                     </div>
@@ -31,12 +31,12 @@
                 </div>
             </div>
 
-            <div class="table-responsive constrained">
+            <div class="table-responsive constrained" ng-if="vm.isLoad">
                 <table class="table responsive" data-sortable>
                     <thead>
                         <tr>
 
-                            <th style="width: 15%">Nome</th>
+                            <th>Nome</th>
                             <th>Email</th>
                             <th>Telefone</th>
                             <th>Cidade</th>
@@ -46,7 +46,7 @@
                     <tbody>
                         <tr ng-repeat="candidato in vm.candidatos" ng-click="vm.select(candidato)">
 
-                            <td style="width: 15%">{{candidato.nome}}</td>
+                            <td>{{candidato.nome}}</td>
                             <td>{{candidato.email}}</td>
                             <td>{{candidato.telefone}}</td>
                             <td>{{candidato.cidade + candidato.estado}}</td>

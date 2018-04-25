@@ -42,6 +42,7 @@
                        "", function (isConfirm) {
                            candidatoService.createOrUpdate(candidatoService.candidato).then(function () {
                                abp.notify.success("Candidato Salvo com Sussesso!!!");
+                               $location.path("/searchCandidato");
                             });
                         });
 
