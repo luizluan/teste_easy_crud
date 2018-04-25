@@ -3,7 +3,7 @@
         <div class="card">
             <div class="header">
                 <h2>
-                   Cadastrar Banco
+                   Informação Bancária
                 </h2>
             </div>
 
@@ -28,7 +28,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.banco.agencia" placeholder="Agência"  autofocus maxlength="20">
+                        <input type="text" class="form-control" ng-model="vm.banco.agencia" placeholder="Agência"  autofocus maxlength="6" numbers-only>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.banco.numerodaConta" placeholder="Número da Conta"  autofocus maxlength="20">
+                        <input type="text" class="form-control" ng-model="vm.banco.numerodaConta" placeholder="Número da Conta"  autofocus maxlength="20" numbers-only>
                     </div>
                 </div>
 

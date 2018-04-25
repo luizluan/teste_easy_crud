@@ -432,6 +432,7 @@
     </Content>
     <Content Include="App\Main\services\appSession.js" />
     <Content Include="App\Main\services\candidatoService.js" />
+    <Content Include="App\Main\services\directives\onlyNumber.js" />
     <Content Include="App\Main\views\candidato\create\createBanco.cshtml" />
     <Content Include="App\Main\views\candidato\create\createBanco.js" />
     <Content Include="App\Main\views\candidato\create\createConhecimento.js" />

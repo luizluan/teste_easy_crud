@@ -19,7 +19,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.nome" placeholder="Nome *" required autofocus maxlength="100">
+                        <input type="text" class="form-control" ng-model="vm.candidato.nome" placeholder="Nome *" required  maxlength="100">
                     </div>
                 </div>
                 <div class="input-group col-md-4">
@@ -27,16 +27,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="email" class="form-control" ng-model="vm.candidato.email" placeholder="Email *" required autofocus maxlength="100">
-                    </div>
-                </div>
-
-                <div class="input-group col-md-4">
-                    <span class="input-group-addon">
-
-                    </span>
-                    <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.telefone" placeholder="Telefone/Whatsapp *" required autofocus maxlength="20">
+                        <input type="email" class="form-control" ng-model="vm.candidato.email" placeholder="Email *" required  maxlength="100">
                     </div>
                 </div>
 
@@ -45,7 +36,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.skype" placeholder="Skype *" required autofocus maxlength="50">
+                        <input type="text" class="form-control" ng-model="vm.candidato.telefone" placeholder="Telefone/Whatsapp *" required  maxlength="20" numbers-only>
                     </div>
                 </div>
 
@@ -54,7 +45,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.linkedin" placeholder="Linkedin *" required autofocus maxlength="100">
+                        <input type="text" class="form-control" ng-model="vm.candidato.skype" placeholder="Skype *" required  maxlength="50">
                     </div>
                 </div>
 
@@ -63,7 +54,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.cidade" placeholder="Cidade *" required autofocus maxlength="50">
+                        <input type="text" class="form-control" ng-model="vm.candidato.linkedin" placeholder="Linkedin *" required  maxlength="100">
                     </div>
                 </div>
 
@@ -72,15 +63,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.estado" placeholder="Estado *" required autofocus maxlength="50">
-                    </div>
-                </div>
-                <div class="input-group col-md-4">
-                    <span class="input-group-addon">
-
-                    </span>
-                    <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.portfolio" placeholder="Portfolio" autofocus maxlength="100">
+                        <input type="text" class="form-control" ng-model="vm.candidato.cidade" placeholder="Cidade *" required  maxlength="50">
                     </div>
                 </div>
 
@@ -89,7 +72,15 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.cpf" placeholder="CPF"  autofocus maxlength="15">
+                        <input type="text" class="form-control" ng-model="vm.candidato.estado" placeholder="Estado *" required  maxlength="50">
+                    </div>
+                </div>
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.portfolio" placeholder="Portfolio"  maxlength="100">
                     </div>
                 </div>
 
@@ -98,7 +89,16 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.crudLink" placeholder="CrudLink"  autofocus maxlength="100">
+                        <input type="text" class="form-control" ng-model="vm.candidato.cpf" placeholder="CPF"   maxlength="15">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.crudLink" placeholder="CrudLink"   maxlength="100">
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.valorHora" placeholder="ValorHora"  autofocus maxlength="10">
+                        <input type="text" class="form-control" ng-model="vm.candidato.valorHora" placeholder="ValorHora"   maxlength="4" numbers-only>
                     </div>
                 </div>
 
@@ -212,7 +212,7 @@
 
                 <div class="input-group col-lg-4">
                     <div class="col-lg-8">
-                        <button type="submit" class="btn bg-success btn-parsley text-white pull-right" ng-click="formCreateCandidato.$valid && vm.avancar()">
+                        <button type="submit" class="btn bg-success btn-parsley text-white pull-right"  ng-click="formCreateCandidato.$valid && vm.avancar()">
                             <span class="fa fa-arrow-right text-white"></span>&nbsp;Avançar
                         </button>
                         <br />
