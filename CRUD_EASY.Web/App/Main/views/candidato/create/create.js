@@ -16,7 +16,7 @@
             vm.avancar = function () {
                 if (vm.candidato.cpf != undefined && vm.candidato.cpf != '') {
                     if (!validaCPF(vm.candidato.cpf)) {
-                        abp.notify.info("CPF INVÁLIDO");
+                        abp.notify.warn("CPF INVÁLIDO");
                         return;
                     }
                 }

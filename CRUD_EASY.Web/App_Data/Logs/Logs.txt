@@ -3858,3 +3858,171 @@ DEBUG 2018-04-25 18:36:32,883 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2018-04-25 18:36:46,244 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: cf034d01-ec90-4c14-8d3c-8b4225d95a6a
 DEBUG 2018-04-25 18:36:48,350 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9474f8e8-6836-4293-acee-e60c214f8e63","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T18:36:48.3509679-03:00","Properties":{}}
 DEBUG 2018-04-25 18:36:48,383 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9474f8e8-6836-4293-acee-e60c214f8e63
+DEBUG 2018-04-25 18:46:21,402 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9474f8e8-6836-4293-acee-e60c214f8e63
+DEBUG 2018-04-25 18:46:22,832 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8a021d43-3f96-4370-ac06-54d934c6f9d4","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T18:46:22.8325027-03:00","Properties":{}}
+DEBUG 2018-04-25 18:46:22,849 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8a021d43-3f96-4370-ac06-54d934c6f9d4
+DEBUG 2018-04-25 18:50:49,702 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8a021d43-3f96-4370-ac06-54d934c6f9d4
+DEBUG 2018-04-25 18:51:17,096 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"652112f4-08a8-43f3-959f-83e2e455f8cd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T18:51:17.0964187-03:00","Properties":{}}
+DEBUG 2018-04-25 18:51:17,144 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 652112f4-08a8-43f3-959f-83e2e455f8cd
+WARN  2018-04-25 18:53:35,133 [14   ] ity.AntiForgery.AbpMvcAntiForgeryManager - The provided anti-forgery token was meant for a different claims-based user than the current user.
+WARN  2018-04-25 18:53:35,322 [14   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-04-25 18:53:35,322 [14   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost:6234/api/services/app/candidato/CreateOrUpdate
+WARN  2018-04-25 18:54:34,631 [23   ] ity.AntiForgery.AbpMvcAntiForgeryManager - The provided anti-forgery token was meant for a different claims-based user than the current user.
+WARN  2018-04-25 18:54:34,631 [23   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-04-25 18:54:34,631 [23   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost:6234/api/services/app/candidato/CreateOrUpdate
+WARN  2018-04-25 18:54:38,884 [29   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   em System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   em Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   em Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   em Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2018-04-25 18:55:10,923 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 652112f4-08a8-43f3-959f-83e2e455f8cd
+DEBUG 2018-04-25 18:55:56,758 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c3c3b457-b404-4341-a5c9-78b5ed370104","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T18:55:56.7584964-03:00","Properties":{}}
+DEBUG 2018-04-25 18:55:57,007 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c3c3b457-b404-4341-a5c9-78b5ed370104
+WARN  2018-04-25 18:56:52,122 [14   ] nHandling.AbpApiExceptionFilterAttribute - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   em Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError()
+   em Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+WARN  2018-04-25 18:56:52,274 [14   ] nHandling.AbpApiExceptionFilterAttribute - There are 2 validation errors:
+WARN  2018-04-25 18:56:52,274 [14   ] nHandling.AbpApiExceptionFilterAttribute -  (input.id)
+WARN  2018-04-25 18:56:52,274 [14   ] nHandling.AbpApiExceptionFilterAttribute -  (input.valorHora)
+WARN  2018-04-25 18:58:53,005 [14   ] nHandling.AbpApiExceptionFilterAttribute - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   em Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError()
+   em Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+WARN  2018-04-25 18:58:53,005 [14   ] nHandling.AbpApiExceptionFilterAttribute - There are 2 validation errors:
+WARN  2018-04-25 18:58:53,005 [14   ] nHandling.AbpApiExceptionFilterAttribute -  (input.id)
+WARN  2018-04-25 18:58:53,005 [14   ] nHandling.AbpApiExceptionFilterAttribute -  (input.valorHora)
+DEBUG 2018-04-25 18:58:53,054 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c3c3b457-b404-4341-a5c9-78b5ed370104
+DEBUG 2018-04-25 18:59:00,579 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7b988cc8-a9ce-4752-9df7-f37a3c987a69","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T18:59:00.5790619-03:00","Properties":{}}
+DEBUG 2018-04-25 18:59:00,691 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7b988cc8-a9ce-4752-9df7-f37a3c987a69
+WARN  2018-04-25 19:00:01,950 [5    ] nHandling.AbpApiExceptionFilterAttribute - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   em Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError()
+   em Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+WARN  2018-04-25 19:00:01,951 [5    ] nHandling.AbpApiExceptionFilterAttribute - There are 1 validation errors:
+WARN  2018-04-25 19:00:01,951 [5    ] nHandling.AbpApiExceptionFilterAttribute -  (input.valorHora)
+DEBUG 2018-04-25 19:00:42,539 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7b988cc8-a9ce-4752-9df7-f37a3c987a69
+DEBUG 2018-04-25 19:02:21,125 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7f3519e4-32d5-440b-884e-ef974d81cab8","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T19:02:21.1259426-03:00","Properties":{}}
+DEBUG 2018-04-25 19:02:21,132 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7f3519e4-32d5-440b-884e-ef974d81cab8
+DEBUG 2018-04-25 19:03:42,608 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7f3519e4-32d5-440b-884e-ef974d81cab8
+DEBUG 2018-04-25 19:03:44,344 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"88d11694-1cd0-43d8-a370-b19664fc3ed3","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T19:03:44.3444474-03:00","Properties":{}}
+DEBUG 2018-04-25 19:03:44,364 [35   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 88d11694-1cd0-43d8-a370-b19664fc3ed3
+DEBUG 2018-04-25 19:05:34,495 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"88d11694-1cd0-43d8-a370-b19664fc3ed3","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-25T19:03:44.3444474-03:00","Properties":{}}

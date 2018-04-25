@@ -9,7 +9,7 @@
                 //Candidato com os valores que fica armazenado no serviço 
                 candidato:
                 {
-                    id: '',
+                    id: '00000000-0000-0000-0000-000000000000',
                     nome: '',
                     telefone: '',
                     email: '',
@@ -18,7 +18,7 @@
                     estado: '',
                     portfolio: '',
                     cpf: '',
-                    valorHora: '',
+                    valorHora: '0',
 
                     banco: {
                         id: 0,
@@ -29,6 +29,7 @@
                     },
 
                     horarioDisponivel: {
+                        Id:0,
                         quatroHorasDia: false,
                         quatroaSeisHorasDia: false,
                         maisdeOitoHorasDia: false,
@@ -36,6 +37,7 @@
                     },
 
                     melhorHorario: {
+                        Id:0,
                         manha: false,
                         tarde: false,
                         noite: false,
@@ -43,7 +45,7 @@
                         horarioComercial: false
                     },
 
-                    conhecimento: {}
+                    conhecimento: { Id:0, Outra: ''}
                   
                 },
                 atributos: [],

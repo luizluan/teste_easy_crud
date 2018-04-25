@@ -35,6 +35,16 @@
                     candidatoService.etapa = 1;
                     $location.path("/banco");
                 }
+
+                vm.salvar = function () {
+
+                    abp.message.confirm("Tem certeza que dejesa salvar o candidato?",
+                       "", function (isConfirm) {
+                            candidatoService.createOrUpdate(candidatoService.candidato).then(function () {
+                            });
+                        });
+
+                }
             }
         ]);
 
