@@ -12,6 +12,7 @@
                 var vm = this;
 
                 vm.criarNovoCandidato = function () {
+                    candidatoService.candidato = candidatoService.getDefaultCandidato();
                     $location.path("/candidato");
                 }
 

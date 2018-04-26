@@ -45,6 +45,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         public static CandidatoOutput MapTo(Candidato c)
         {
             var candidato = c.MapTo<CandidatoOutput>();
+            if(c.Conhecimento != null)
             candidato.Conhecimentos = AtributoDto.GetProperties(c.Conhecimento);
             candidato.Atributos = AtributoDto.GetAtributos(c.Conhecimento);
             return candidato;

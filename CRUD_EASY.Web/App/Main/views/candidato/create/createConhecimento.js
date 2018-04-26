@@ -29,7 +29,7 @@
                     var id = candidatoService.candidato.conhecimento.id;
                     var outra = candidatoService.candidato.conhecimento.outra;
                     vm.atributos = candidatoService.candidato.atributos == undefined ? candidatoService.atributos : candidatoService.candidato.atributos;
-                    candidatoService.candidato.conhecimento = { Id: id, Outra: outra };
+                    candidatoService.candidato.conhecimento = { Id: id, outra: outra };
                     vm.conhecimento = candidatoService.candidato.conhecimento;
                     angular.forEach(vm.atributos, function (at) {
                         at.nota = at.nota.toString();
@@ -39,6 +39,9 @@
                     vm.isLoad = true;
                 }
 
+                if (candidatoService.etapa == 0) {
+                    window.location.href = '#/candidato';
+                }
 
                 vm.voltar = function () {
                     candidatoService.etapa = 1;

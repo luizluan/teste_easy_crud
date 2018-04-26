@@ -11,6 +11,8 @@
 
                 var vm = this;
 
+               
+
                 vm.tiposdeConta = [
                     {
                         valor: 0,
@@ -23,9 +25,9 @@
                     }
                 ];
 
-                //if (candidatoService.etapa == 0) {
-                //    window.location.href = '#/candidato';
-                //}
+                if (candidatoService.etapa == 0) {
+                    window.location.href = '#/candidato';
+                }
 
                 vm.banco = candidatoService.candidato.banco;
 

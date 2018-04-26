@@ -6355,3 +6355,330 @@ DEBUG 2018-04-26 17:16:51,720 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2018-04-26 17:18:23,549 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a2e4335c-7873-4462-a658-457ff48ef40c
 DEBUG 2018-04-26 17:18:37,061 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"82de31bd-ea7c-4f66-978e-4838e08fb933","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:18:37.061427-03:00","Properties":{}}
 DEBUG 2018-04-26 17:18:37,073 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 82de31bd-ea7c-4f66-978e-4838e08fb933
+DEBUG 2018-04-26 17:22:50,725 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 82de31bd-ea7c-4f66-978e-4838e08fb933
+DEBUG 2018-04-26 17:22:52,002 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9c06f022-c951-4698-b85f-cf485a1901ad","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:22:52.0021599-03:00","Properties":{}}
+DEBUG 2018-04-26 17:22:52,008 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9c06f022-c951-4698-b85f-cf485a1901ad
+DEBUG 2018-04-26 17:25:20,726 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9c06f022-c951-4698-b85f-cf485a1901ad
+DEBUG 2018-04-26 17:25:23,997 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4ebf2900-2ca7-4893-8a22-18732a978093","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:25:23.9979466-03:00","Properties":{}}
+DEBUG 2018-04-26 17:25:24,016 [24   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4ebf2900-2ca7-4893-8a22-18732a978093
+DEBUG 2018-04-26 17:28:47,431 [30   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4ebf2900-2ca7-4893-8a22-18732a978093
+DEBUG 2018-04-26 17:28:49,223 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"208c147e-6d98-4596-bf55-7e0e14e8fbcc","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:28:49.2238068-03:00","Properties":{}}
+DEBUG 2018-04-26 17:28:49,292 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 208c147e-6d98-4596-bf55-7e0e14e8fbcc
+DEBUG 2018-04-26 17:30:15,953 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 208c147e-6d98-4596-bf55-7e0e14e8fbcc
+DEBUG 2018-04-26 17:30:17,251 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9670a6af-5e5b-4325-bc1c-7576978f07cd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:30:17.2518943-03:00","Properties":{}}
+DEBUG 2018-04-26 17:30:17,256 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9670a6af-5e5b-4325-bc1c-7576978f07cd
+ERROR 2018-04-26 17:31:25,184 [29   ] nHandling.AbpApiExceptionFilterAttribute - Referência de objeto não definida para uma instância de um objeto.
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em CRUD_EASY.CandidatoAppService.Dtos.AtributoDto.GetProperties(Conhecimento c) na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Dtos\Base\AtributoDto.cs:linha 31
+   em CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput.MapTo(Candidato c) na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Dtos\Busca\CandidatoOutput.cs:linha 48
+   em System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em CRUD_EASY.CandidatoAppService.Service.CandidatoAppService.GetAll(BuscaCandidatoInput input) na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Service\CandidatoAppService.cs:linha 76
+   em Castle.Proxies.CandidatoAppServiceProxy.GetAll_callback(BuscaCandidatoInput input)
+   em Castle.Proxies.Invocations.ICandidatoAppService_GetAll.InvokeMethodOnTarget()
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   em Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Castle.Proxies.CandidatoAppServiceProxy.GetAll(BuscaCandidatoInput input)
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Castle.Proxies.DynamicApiController`1Proxy_1.GetAll(BuscaCandidatoInput input)
+   em lambda_method(Closure , Object , Object[] )
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ERROR 2018-04-26 17:31:38,310 [5    ] nHandling.AbpApiExceptionFilterAttribute - Referência de objeto não definida para uma instância de um objeto.
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em CRUD_EASY.CandidatoAppService.Dtos.AtributoDto.GetProperties(Conhecimento c) na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Dtos\Base\AtributoDto.cs:linha 31
+   em CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput.MapTo(Candidato c) na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Dtos\Busca\CandidatoOutput.cs:linha 48
+   em System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em CRUD_EASY.CandidatoAppService.Service.CandidatoAppService.GetAll(BuscaCandidatoInput input) na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Service\CandidatoAppService.cs:linha 76
+   em Castle.Proxies.CandidatoAppServiceProxy.GetAll_callback(BuscaCandidatoInput input)
+   em Castle.Proxies.Invocations.ICandidatoAppService_GetAll.InvokeMethodOnTarget()
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   em Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Castle.Proxies.CandidatoAppServiceProxy.GetAll(BuscaCandidatoInput input)
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Castle.Proxies.DynamicApiController`1Proxy_1.GetAll(BuscaCandidatoInput input)
+   em lambda_method(Closure , Object , Object[] )
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+DEBUG 2018-04-26 17:31:38,321 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"9670a6af-5e5b-4325-bc1c-7576978f07cd","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:30:17.2518943-03:00","Properties":{}}
+DEBUG 2018-04-26 17:33:19,615 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-26 17:33:20,774 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-26 17:33:20,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,788 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,790 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,791 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,793 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:20,798 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-26 17:33:21,876 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:33:21,876 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:33:21,876 [1    ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:33:21,876 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:33:22,508 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:33:24,586 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-26 17:33:24,646 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-26 17:33:24,666 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-26 17:33:24,674 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-26 17:33:24,682 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-26 17:33:24,919 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-26 17:33:25,010 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-26 17:33:25,010 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-26 17:33:25,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-26 17:33:25,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-26 17:33:25,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-26 17:33:25,017 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-26 17:33:25,018 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-26 17:33:27,743 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-26 17:33:27,744 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-26 17:33:27,745 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-26 17:33:27,746 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-26 17:33:27,747 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-26 17:33:27,749 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-26 17:33:27,750 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-26 17:33:53,317 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"bc3a66b4-8740-465d-a26c-824f60a0e24f","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:33:53.3083815-03:00","Properties":{}}
+DEBUG 2018-04-26 17:33:53,461 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: bc3a66b4-8740-465d-a26c-824f60a0e24f
+DEBUG 2018-04-26 17:38:59,939 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-26 17:38:59,954 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-26 17:38:59,962 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Web.CRUD_EASYWebModule, CRUD_EASY.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYDataModule, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYCoreModule, CRUD_EASY.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.CRUD_EASYApplicationModule, CRUD_EASY.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CRUD_EASY.Api.CRUD_EASYWebApiModule, CRUD_EASY.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:38:59,971 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-26 17:39:00,364 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:39:00,364 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:39:00,364 [1    ] o.Configuration.LanguageManagementConfig - Converted CRUD_EASY (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:39:00,364 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-26 17:39:00,891 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CRUD_EASY.EntityFramework.CRUD_EASYDbContext, CRUD_EASY.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-26 17:39:04,352 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-26 17:39:04,400 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-26 17:39:04,417 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-26 17:39:04,423 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CRUD_EASY
+DEBUG 2018-04-26 17:39:04,430 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-26 17:39:04,543 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-26 17:39:04,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2018-04-26 17:39:04,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.CreateUserDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UpdateUserDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Users.Dto.UserDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.PermissionDto
+DEBUG 2018-04-26 17:39:04,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Roles.Dto.RoleDto
+DEBUG 2018-04-26 17:39:04,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-26 17:39:04,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-04-26 17:39:04,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-26 17:39:04,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.CandidatoAppService.Dtos.Busca.CandidatoOutput
+DEBUG 2018-04-26 17:39:04,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-04-26 17:39:04,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CRUD_EASY.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-04-26 17:39:06,873 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-26 17:39:06,875 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-26 17:39:06,876 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-26 17:39:06,878 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-04-26 17:39:06,879 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-04-26 17:39:06,880 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-26 17:39:06,882 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CRUD_EASY.CandidatoAppService.Service.ICandidatoAppService' with service name 'app/candidato'.
+DEBUG 2018-04-26 17:39:23,088 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"55bbd9cf-1e0b-4576-8be0-b212c00c8f06","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:39:23.0794413-03:00","Properties":{}}
+DEBUG 2018-04-26 17:39:23,154 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 55bbd9cf-1e0b-4576-8be0-b212c00c8f06
+DEBUG 2018-04-26 17:41:11,679 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 55bbd9cf-1e0b-4576-8be0-b212c00c8f06
+DEBUG 2018-04-26 17:41:15,491 [19   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"dde32353-55ac-49b6-91b7-208638b68530","IpAddress":"192.168.179.1","TenantId":null,"UserId":1,"ConnectTime":"2018-04-26T17:41:15.491938-03:00","Properties":{}}
+DEBUG 2018-04-26 17:41:15,506 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: dde32353-55ac-49b6-91b7-208638b68530
+ERROR 2018-04-26 17:41:50,184 [12   ] nHandling.AbpApiExceptionFilterAttribute - Valor não pode ser nulo.
+Nome do parâmetro: entity
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: entity
+   em System.Data.Entity.Utilities.Check.NotNull[T](T value, String parameterName)
+   em System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   em Abp.EntityFramework.Repositories.EfRepositoryBase`3.AttachIfNot(TEntity entity)
+   em Abp.EntityFramework.Repositories.EfRepositoryBase`3.UpdateAsync(TEntity entity)
+   em Castle.Proxies.Invocations.IRepository`2_UpdateAsync_38.InvokeMethodOnTarget()
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   em Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   em Castle.DynamicProxy.AbstractInvocation.Proceed()
+   em Castle.Proxies.IRepository`2Proxy_15.UpdateAsync(Banco entity)
+   em CRUD_EASY.Candidatos.Manager.CandidatoManager.<CreateOrUpdate>d__6.MoveNext() na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Core\Candidatos\Manager\CandidatoManager.cs:linha 69
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em CRUD_EASY.CandidatoAppService.Service.CandidatoAppService.<CreateOrUpdate>d__2.MoveNext() na C:\Users\luizluan\Source\Repos\teste_easy_crud\CRUD_EASY.Application\CandidatoAppService\Service\CandidatoAppService.cs:linha 42
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__3`1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
