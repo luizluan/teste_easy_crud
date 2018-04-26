@@ -54,7 +54,7 @@ namespace CRUD_EASY.Candidatos.Manager
         /// <returns></returns>
         public List<Candidato> Get(Expression<Func<Candidato, bool>> expression)
         {
-            return _candidatoRepository.GetAllIncluding(x => x.Banco, x => x.MelhorHorario, x => x.HorarioDisponivel, x => x.Conhecimento).Where(expression).ToList();
+            return _candidatoRepository.GetAllIncluding(x => x.Banco, x => x.MelhorHorario, x => x.HorarioDisponivel, x => x.Conhecimento).Where(expression).Take(20).ToList();
         }
     }
 }
