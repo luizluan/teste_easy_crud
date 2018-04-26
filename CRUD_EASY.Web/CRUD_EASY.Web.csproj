@@ -436,6 +436,7 @@
     <Content Include="App\Main\views\candidato\create\createBanco.cshtml" />
     <Content Include="App\Main\views\candidato\create\createBanco.js" />
     <Content Include="App\Main\views\candidato\create\createConhecimento.js" />
+    <Content Include="App\Main\views\candidato\search\candidatoInfo.js" />
     <Content Include="App\Main\views\candidato\search\searchCandidato.js" />
     <Content Include="App\Main\views\directives\autoFocus.js" />
     <Content Include="App\Main\views\directives\enterKey.js" />
@@ -2685,6 +2686,7 @@
     <Content Include="Abp\Framework\styles\abp.css.map" />
     <Content Include="App\Main\views\candidato\create\createConhecimento.cshtml" />
     <Content Include="App\Main\views\candidato\search\searchCandidato.cshtml" />
+    <Content Include="App\Main\views\candidato\search\candidatoInfo.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

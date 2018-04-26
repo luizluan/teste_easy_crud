@@ -93,6 +93,14 @@
                     templateUrl: '/App/Main/views/candidato/create/createConhecimento.cshtml'
 
                 });
+
+            $stateProvider
+                .state('candidatoInfo',
+                {
+                    url: '/candidatoInfo',
+                    templateUrl: '/App/Main/views/candidato/search/candidatoInfo.cshtml'
+
+                });
         }
     ]);
 

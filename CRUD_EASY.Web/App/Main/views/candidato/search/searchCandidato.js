@@ -67,8 +67,16 @@
                         vm.searchIt();
                 }
 
+                vm.select = function (candidato) {
+
+                    candidatoService.candidato = candidato;
+                    $location.path("/candidatoInfo");
+                }
+
             }
         ]);
+
+       
 
 
 
