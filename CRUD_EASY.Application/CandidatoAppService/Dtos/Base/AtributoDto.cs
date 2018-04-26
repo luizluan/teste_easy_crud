@@ -50,7 +50,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
             }
             //Remove Última vírgula e último espaço 
             resultado = resultado.Remove(resultado.Length-2);
-            return resultado;
+            return resultado+", "+c.Outra;
         }
 
         /// <summary>
