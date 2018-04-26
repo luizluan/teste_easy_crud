@@ -21,7 +21,7 @@ namespace CRUD_EASY.Candidatos.Attributes.Entity.Bancos
         public string Agencia { get; set; }
         public string NumerodaConta { get; set; }
 
-        TipodeConta  TipodeConta { get; set; }
+        public TipodeConta  TipodeConta { get; set; }
 
     }
 }
