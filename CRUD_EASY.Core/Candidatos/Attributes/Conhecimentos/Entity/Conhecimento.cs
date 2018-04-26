@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity
 {
+    /// <summary>
+    /// Classe com os conhecimentos como atributos cada atributo tem uma nota
+    /// </summary>
     [Table("Conhecimento")]
     public class Conhecimento : Entity<int>
     {

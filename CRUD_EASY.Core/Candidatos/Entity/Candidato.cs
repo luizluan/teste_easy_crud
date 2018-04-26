@@ -14,6 +14,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.Candidatos.Entity
 {
+    /// <summary>
+    /// Classe Candidato
+    /// </summary>
     [Table("Candidato")]
     public class Candidato : Entity<Guid>, ISoftDelete
     {

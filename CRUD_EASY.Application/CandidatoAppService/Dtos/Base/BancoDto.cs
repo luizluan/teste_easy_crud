@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.CandidatoAppService.Dtos.Base
 {
+    /// <summary>
+    /// BancoDto
+    /// A framework utiliza esse tipo de classe para receber e retornar dados da api, segundo o criador da framework não é recomendável utilizar diretamente a entidade para isso 
+    /// </summary>
     public class BancoDto : EntityDto<int>
     {
        

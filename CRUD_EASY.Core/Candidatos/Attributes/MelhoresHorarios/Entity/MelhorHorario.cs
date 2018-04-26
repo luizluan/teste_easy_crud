@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.Candidatos.Attributes.MelhoresHorarios.Entity
 {
+    /// <summary>
+    /// Melhor horário disponível para o Candidato fazer o Trabalho
+    /// </summary>
     [Table("MelhorHorario")]
     public class MelhorHorario : Entity<int>
     {

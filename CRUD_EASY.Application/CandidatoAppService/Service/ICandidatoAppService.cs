@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.CandidatoAppService.Service
 {
+    /// <summary>
+    /// Interface do AppService tudo que tem no ApplicationService vira api através da framework
+    /// </summary>
     public interface ICandidatoAppService : IApplicationService
     {
 

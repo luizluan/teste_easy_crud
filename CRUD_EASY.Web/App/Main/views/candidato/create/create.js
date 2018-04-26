@@ -12,8 +12,9 @@
             var vm = this;
 
 
-
+            //Ação do botão avançar
             vm.avancar = function () {
+                //Fiz essa checagem caso o cpf esteja preenchido
                 if (vm.candidato.cpf != undefined && vm.candidato.cpf != '') {
                     if (!validaCPF(vm.candidato.cpf)) {
                         abp.notify.warn("CPF INVÁLIDO");
@@ -25,7 +26,7 @@
                     return;
             }
 
-
+            //Função que valida cpf
             function validaCPF(cpf) {
                 var numeros, digitos, soma, i, resultado, digitos_iguais;
                 digitos_iguais = 1;
@@ -58,7 +59,7 @@
                     return false;
             }
 
-
+                //Carrega as informações que estão no serviço
                  vm.candidato = candidatoService.candidato;
 
         }

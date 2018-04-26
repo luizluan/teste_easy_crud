@@ -57,6 +57,7 @@ namespace CRUD_EASY.Candidatos.Manager
         /// <returns>Id do Candidato</returns>
         public async Task<Guid> CreateOrUpdate(Candidato candidato)
         {
+            //Se estiver vazio significa que o candidato é novo 
             if (candidato.Id == Guid.Empty)
             {
                 var id = await _candidatoRepository.InsertAndGetIdAsync(candidato);
@@ -64,6 +65,9 @@ namespace CRUD_EASY.Candidatos.Manager
             }
             else
             {
+                //Atualiza informações do Candidato, era pra atualizar as entidades filhas mas isso não aconteceu
+                //Tive que inverter todos os repositórios e atualizar um a um 
+                //Achei mais prático do que criar um manager pra cada entidade 
                 await _candidatoRepository.UpdateAsync(candidato);
 
                 await _bancoRepository.UpdateAsync(candidato.Banco);

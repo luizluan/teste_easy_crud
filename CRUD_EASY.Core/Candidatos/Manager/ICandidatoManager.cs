@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.Candidatos.Manager
 {
+    /// <summary>
+    /// Interface do Manager do Candidato, contém os métodos para adicionar remover e fazer consulta da entidade
+    /// </summary>
     public interface ICandidatoManager : IDomainService
     {
         Task<Guid> CreateOrUpdate(Candidato candidato);
