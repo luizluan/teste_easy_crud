@@ -26,7 +26,16 @@
                         vm.isLoad = true;
                     });
                 else {
-                    vm.atributos = candidatoService.atributos;
+                    var id = candidatoService.candidato.conhecimento.id;
+                    var outra = candidatoService.candidato.conhecimento.outra;
+                    vm.atributos = candidatoService.candidato.atributos == undefined ? candidatoService.atributos : candidatoService.candidato.atributos;
+                    candidatoService.candidato.conhecimento = { Id: id, Outra: outra };
+                    vm.conhecimento = candidatoService.candidato.conhecimento;
+                    angular.forEach(vm.atributos, function (at) {
+                        at.nota = at.nota.toString();
+                        vm.conhecimento[at.nome] = at.nota;
+                    });
+                   
                     vm.isLoad = true;
                 }
 

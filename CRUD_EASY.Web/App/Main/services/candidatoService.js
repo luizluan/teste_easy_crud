@@ -95,6 +95,17 @@
                     return $q.all([promess.promise]).then(function () {
                         return candidatos;
                     });
+                },
+
+                excluirCandidato: function (id) {
+                    var promess = $q.defer();
+                    candidatoService.delete({ id:id }).then(function (response) {
+                        promess.resolve();
+                    });
+
+                    return $q.all([promess.promise]).then(function () {
+                        return true;
+                    });
                 }
 
 

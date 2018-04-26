@@ -1,151 +1,171 @@
 ﻿<div ng-controller="app.views.candidatoInfo as vm">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-    <div class="card">
+        <div class="card">
 
-    
 
-        <div class="row">
-            <div class="header">
-                <h3>
-                    Informações Pessoais
-                 
-                </h3>
+
+            <div class="row">
+                <div class="header">
+                    <h4>
+                        Informações Pessoais
+
+                    </h4>
+                </div>
+                <div class="col-lg-8">
+                    <br />
+                    <div class="col-md-1">
+                        <strong>Nome:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.nome}}</label>
+                    </div>
+
+                    <div class="col-md-1">
+                        <strong>Telefone:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.telefone}}</label>
+                    </div>
+
+                    <div class="col-md-1">
+                        <strong>Email:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.email}}</label>
+                    </div>
+
+                    <div class="col-md-1">
+                        <strong>Skype:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.skype}}</label>
+                    </div>
+
+                    <div class="col-md-1">
+                        <strong>Cidade:</strong>
+                    </div>
+                    <div class="col-md-2">
+                        <label>{{vm.candidato.cidade}}</label>
+                    </div>
+                    <div class="col-md-1">
+                        <strong>Estado:</strong>
+                    </div>
+                    <div class="col-md-8">
+                        <label>{{vm.candidato.estado}}</label>
+                    </div>
+
+                    <div class="col-md-1">
+                        <strong>Portfolio:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.portfolio}}</label>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <strong>Portfolio:</strong>
+                        <label>{{vm.candidato.conhecimentos}}</label>
+                    </div>
+
+
+                    <div class="col-lg-12">
+                        <strong>Link do Crud:</strong>
+                        <label>{{vm.candidato.crudLink}}</label>
+                    </div>
+
+                    <div class="col-lg-1">
+                        <strong>CPF:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.cpf}}</label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <strong>Pretensão salarial por Hora:</strong>
+                        <label>{{vm.candidato.valorHora}}</label>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h4>Número de Horas Disponíveis por Dia </h4>
+                        <ul>
+                            <li ng-if="vm.candidato.horarioDisponivel.quatroHorasDia"> Quatro horas por dia </li>
+                            <li ng-if="vm.candidato.horarioDisponivel.quatroaSeisHorasDia"> Quatro a seis horas por dia </li>
+                            <li ng-if="vm.candidato.horarioDisponivel.maisdeOitoHorasDia"> Mais de oito Horas por dia </li>
+                            <li ng-if="vm.candidato.horarioDisponivel.apenasFimSemana"> Apenas fim de semana </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h4>Melhor Horário</h4>
+                        <ul>
+                            <li ng-if="vm.candidato.melhorHoario.manha"> Manhã </li>
+                            <li ng-if="vm.candidato.melhorHorario.tarde"> Tarde </li>
+                            <li ng-if="vm.candidato.melhorHorario.noite"> Noite </li>
+                            <li ng-if="vm.candidato.melhorHorario.horarioComercial"> Horário Comercial </li>
+                        </ul>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="col-lg-8">
-                <br />
-                <br />
-                <div class="col-md-1">
-                    <strong>Nome:</strong>
-                </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.nome}}</label>
-                </div>
 
-                <div class="col-md-1">
-                    <strong>Telefone:</strong>
+            <div class="row">
+                <div class="header">
+                    <h2>
+                        Informações Bancárias
+                    </h2>
                 </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.telefone}}</label>
-                </div>
+                <div class="col-lg-8">
+                    <br />
+                    <div class="col-md-1">
+                        <strong>Banco:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.banco.nome}}</label>
+                    </div>
 
-                <div class="col-md-1">
-                    <strong>Email:</strong>
-                </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.email}}</label>
-                </div>
+                    <div class="col-md-1">
+                        <strong>Agência:</strong>
+                    </div>
+                    <div class="col-md-11">
+                        <label>{{vm.candidato.banco.agencia}}</label>
+                    </div>
 
-                <div class="col-md-1">
-                    <strong>Skype:</strong>
-                </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.skype}}</label>
-                </div>
+                    <div class="col-md-12">
+                        <strong>Tipo de Conta: </strong>
+                        <label ng-if="vm.candidato.banco.tipodeConta == 0">Conta Corrente</label>
+                        <label ng-if="vm.candidato.banco.tipodeConta != 0">Conta Poupança</label>
+                    </div>
 
-                <div class="col-md-1">
-                    <strong>Cidade:</strong>
-                </div>
-                <div class="col-md-2">
-                    <label>{{vm.candidato.cidade}}</label>
-                </div>
-                <div class="col-md-1">
-                    <strong>Estado:</strong>
-                </div>
-                <div class="col-md-8">
-                    <label>{{vm.candidato.estado}}</label>
-                </div>
+                    <div class="col-md-12">
+                        <strong>Número da Conta: </strong>
+                        <label>{{vm.candidato.banco.numerodaConta}}</label>
+                    </div>
 
-                <div class="col-md-1">
-                    <strong>Portfolio:</strong>
                 </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.portfolio}}</label>
-                  
-                </div>
-
+            </div>
+            <div class="input-group col-lg-4">
                 <div class="col-lg-12">
-                    <strong>Link do Crud:</strong>
-                    <label>{{vm.candidato.crudLink}}</label>
+                    <br />
+                    <div class="col-lg-4">
+                        <button type="submit" class="btn bg-success btn-parsley text-white pull-left" ng-click="vm.voltar()">
+                            <span class="fa fa-arrow-left text-white"></span>&nbsp;Voltar
+                        </button>
+                    </div>
+                    <div class="col-lg-6" style="display:inline">
+                        <button type="submit" class="btn bg-danger btn-parsley text-white" ng-click="vm.excluir()">
+                            <span class="fa fa-trash text-white"></span>&nbsp;Excluir
+                        </button>
+                        <button type="submit" class="btn bg-success btn-parsley text-white" ng-click="vm.editar()">
+                            <span class="fa fa-save text-white"></span>&nbsp;Editar
+                        </button>
+                    </div>
+                    <br />
+                    <br />
                 </div>
-        
-                <div class="col-lg-1">
-                    <strong>CPF:</strong>
-                </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.cpf}}</label>
-                </div>
-
-                <div class="col-md-4">
-                    <strong>Pretensão salarial por Hora:</strong>
-                    <label>{{vm.candidato.valorHora}}</label>
-                </div>
-
-                <div class="col-md-12">
-                    <h3>Número de Horas Disponíveis por dia </h3>
-                    <ul>
-                        <li ng-if="vm.candidato.horarioDisponivel.quatroHorasDia"> Quatro horas por dia </li>
-                        <li ng-if="vm.candidato.horarioDisponivel.quatroaSeisHorasDia"> Quatro a seis horas por dia </li>
-                        <li ng-if="vm.candidato.horarioDisponivel.maisdeOitoHorasDia"> Mais de oito Horas por dia </li>
-                        <li ng-if="vm.candidato.horarioDisponivel.apenasFimSemana"> Apenas fim de semana </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-12">
-                    <h3>Melhor Horário</h3>
-                    <ul>
-                        <li ng-if="vm.candidato.melhorHoario.manha"> Manhã </li>
-                        <li ng-if="vm.candidato.melhorHorario.tarde"> Tarde </li>
-                        <li ng-if="vm.candidato.melhorHorario.noite"> Noite </li>
-                        <li ng-if="vm.candidato.melhorHorario.horarioComercial"> Horário Comercial </li>
-                    </ul>
-                </div>
-             
-                   
             </div>
         </div>
-
-        <div class="row">
-            <div class="header">
-                <h3>
-                    Informações Bancárias
-                </h3>
-            </div>
-            <div class="col-lg-8">
-                <br />
-                <div class="col-md-1">
-                    <strong>Banco:</strong>
-                </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.banco.nome}}</label>
-                </div>
-
-                <div class="col-md-1">
-                    <strong>Agência:</strong>
-                </div>
-                <div class="col-md-11">
-                    <label>{{vm.candidato.banco.agencia}}</label>
-                </div>
-
-                <div class="col-md-12">
-                    <strong>Tipo de Conta: </strong>
-                    <label ng-if="vm.candidato.banco.tipodeConta == 0">Conta Corrente</label>
-                    <label ng-if="vm.candidato.banco.tipodeConta != 0">Conta Poupança</label>
-                </div>
-
-                <div class="col-md-12">
-                    <strong>Número da Conta: </strong>
-                    <label>{{vm.candidato.banco.numerodaConta}}</label>
-                </div>
-
-            </div>
-        </div>
-        </div>
-
-
-
-
-
     </div>
 
 </div>

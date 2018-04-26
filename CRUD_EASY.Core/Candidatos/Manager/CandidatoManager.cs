@@ -6,6 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Services;
+using CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity;
+using CRUD_EASY.Candidatos.Attributes.Entity.Bancos;
+using CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity;
+using CRUD_EASY.Candidatos.Attributes.MelhoresHorarios.Entity;
 using CRUD_EASY.Candidatos.Entity;
 
 namespace CRUD_EASY.Candidatos.Manager
@@ -18,9 +22,31 @@ namespace CRUD_EASY.Candidatos.Manager
         /// </summary>
         private readonly IRepository<Candidato, Guid> _candidatoRepository;
 
-        public CandidatoManager(IRepository<Candidato, Guid> candidatoRepository)
+        /// <summary>
+        /// Children Repositories
+        /// </summary>
+        private readonly IRepository<Banco, int> _bancoRepository;
+        private readonly IRepository<MelhorHorario, int> _melhorHorarioRepository;
+        private readonly IRepository<HorarioDisponivel, int> _horariodisponivelRepository;
+        private readonly IRepository<Conhecimento, int> _conhecimentoRepository;
+
+
+        public CandidatoManager(IRepository<Candidato, Guid> candidatoRepository,
+                                IRepository<Banco, int> bancoRepository,
+                                IRepository<MelhorHorario, int> melhorHorarioRepository,
+                                IRepository<HorarioDisponivel, int> horarioDisponivelRepository,
+                                IRepository<Conhecimento, int> conhecimentoRepository)
+                                
+            
         {
             _candidatoRepository = candidatoRepository;
+
+            _bancoRepository = bancoRepository;
+            _melhorHorarioRepository = melhorHorarioRepository;
+            _horariodisponivelRepository = horarioDisponivelRepository;
+            _conhecimentoRepository = conhecimentoRepository;
+
+
         }
 
 
@@ -31,10 +57,23 @@ namespace CRUD_EASY.Candidatos.Manager
         /// <returns>Id do Candidato</returns>
         public async Task<Guid> CreateOrUpdate(Candidato candidato)
         {
+            if (candidato.Id == Guid.Empty)
+            {
+                var id = await _candidatoRepository.InsertAndGetIdAsync(candidato);
+                return id;
+            }
+            else
+            {
+                await _candidatoRepository.UpdateAsync(candidato);
 
-            var id = await _candidatoRepository.InsertOrUpdateAndGetIdAsync(candidato);
+                await _bancoRepository.UpdateAsync(candidato.Banco);
+                await _melhorHorarioRepository.UpdateAsync(candidato.MelhorHorario);
+                await _horariodisponivelRepository.UpdateAsync(candidato.HorarioDisponivel);
+                await _conhecimentoRepository.UpdateAsync(candidato.Conhecimento);
 
-            return id;
+                return candidato.Id;
+            }
+            
         }
 
         /// <summary>
