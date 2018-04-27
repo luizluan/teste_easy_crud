@@ -2,7 +2,7 @@
 using CRUD_EASY.CandidatoAppService.Dtos.Busca;
 using CRUD_EASY.CandidatoAppService.Dtos.Delete;
 using CRUD_EASY.CandidatoAppService.Service;
-using CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity;
+using CRUD_EASY.Candidatos.Attributes.Disponibilidade.Entity;
 using Shouldly;
 using System;
 using System.Collections.Generic;
@@ -23,6 +23,10 @@ namespace CRUD_EASY.Tests.Candidato
             _candidatoAppService = Resolve<ICandidatoAppService>(); 
         }
 
+        /// <summary>
+        /// Retorna um dto com um  candidato padrão criado para testes
+        /// </summary>
+        /// <returns>Candidato</returns>
         public CandidatoDto GetDefaultCandidato()
         {
             CandidatoDto DefaultCandidato = new CandidatoDto()
@@ -41,7 +45,7 @@ namespace CRUD_EASY.Tests.Candidato
                 {
                     HorarioComercial = true,
                 },
-                HorarioDisponivel = new HorarioDisponivelDto()
+                Disponibilidade = new DisponibilidadeDto()
                 {
                     MaisdeOitoHorasDia = true
                 },
@@ -93,7 +97,7 @@ namespace CRUD_EASY.Tests.Candidato
                 //ASSERT
                 var candidatos = _candidatoAppService.GetAll(new BuscaCandidatoInput());
 
-                candidatos.Count.ShouldBe(2);
+                candidatos.Count.ShouldBe(7);
           
         }
 
@@ -109,7 +113,8 @@ namespace CRUD_EASY.Tests.Candidato
             //ASSERT
             var candidatos = _candidatoAppService.GetAll(new BuscaCandidatoInput());
 
-            candidatos.Count.ShouldBe(1);
+            //Seis por causa do SeedData
+            candidatos.Count.ShouldBe(6);
         }
 
         [Fact]
@@ -149,11 +154,13 @@ namespace CRUD_EASY.Tests.Candidato
 
             //ACT
             candidato.Nome = "Paulo Silva";
+            candidato.Banco.Nome = "Caixa";
             await _candidatoAppService.CreateOrUpdate(candidato);
 
             //ASSERT
             var candidatos = _candidatoAppService.GetAll(new BuscaCandidatoInput() { Term = "Paulo" });
             candidatos.Count.ShouldBe(1);
+            candidato.Banco.Nome.ShouldBe("Caixa");
         }
 
         [Fact]
@@ -171,7 +178,7 @@ namespace CRUD_EASY.Tests.Candidato
             //ASSERT
             var candidatos = _candidatoAppService.GetAll(new BuscaCandidatoInput());
 
-            candidatos.Count.ShouldBe(0);
+            candidatos.Count.ShouldBe(5);
         }
 
 

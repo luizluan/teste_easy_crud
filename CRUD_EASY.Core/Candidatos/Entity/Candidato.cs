@@ -2,7 +2,7 @@
 using CRUD_EASY.Candidatos.Attributes.Bancos;
 using CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity;
 using CRUD_EASY.Candidatos.Attributes.Entity.Bancos;
-using CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity;
+using CRUD_EASY.Candidatos.Attributes.Disponibilidade.Entity;
 using CRUD_EASY.Candidatos.Attributes.MelhoresHorarios.Entity;
 using System;
 using System.Collections.Generic;
@@ -14,6 +14,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.Candidatos.Entity
 {
+    /// <summary>
+    /// Classe Candidato
+    /// </summary>
     [Table("Candidato")]
     public class Candidato : Entity<Guid>, ISoftDelete
     {
@@ -33,7 +36,7 @@ namespace CRUD_EASY.Candidatos.Entity
         [Required]
         public string Telefone { get; set; }
 
-        [Required]
+        
         public string Linkedin { get; set; }
 
         [Required]
@@ -57,10 +60,11 @@ namespace CRUD_EASY.Candidatos.Entity
 
         public MelhorHorario MelhorHorario {get;set;}
 
-        public HorarioDisponivel HorarioDisponivel { get; set; }
+        public Disponibilidade Disponibilidade { get; set; }
 
         public Conhecimento Conhecimento { get; set; }
 
+        [Required]
         public int ValorHora {get;set;}
 
     }

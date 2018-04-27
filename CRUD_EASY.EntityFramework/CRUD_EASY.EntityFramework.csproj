@@ -215,17 +215,14 @@
     <Compile Include="Migrations\201803261403237_Upgraded_To_Abp_v3_5.Designer.cs">
       <DependentUpon>201803261403237_Upgraded_To_Abp_v3_5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804191437400_Initial.cs" />
-    <Compile Include="Migrations\201804191437400_Initial.Designer.cs">
-      <DependentUpon>201804191437400_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804191951264_Valor_Hora.cs" />
-    <Compile Include="Migrations\201804191951264_Valor_Hora.Designer.cs">
-      <DependentUpon>201804191951264_Valor_Hora.cs</DependentUpon>
+    <Compile Include="Migrations\201804271217513_Initial.cs" />
+    <Compile Include="Migrations\201804271217513_Initial.Designer.cs">
+      <DependentUpon>201804271217513_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="CRUD_EASYDataModule.cs" />
+    <Compile Include="Migrations\SeedData\CandidatosTestBase.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsCreator.cs" />
     <Compile Include="Migrations\SeedData\DefaultLanguagesCreator.cs" />
     <Compile Include="Migrations\SeedData\DefaultSettingsCreator.cs" />
@@ -258,11 +255,8 @@
     <EmbeddedResource Include="Migrations\201803261403237_Upgraded_To_Abp_v3_5.resx">
       <DependentUpon>201803261403237_Upgraded_To_Abp_v3_5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804191437400_Initial.resx">
-      <DependentUpon>201804191437400_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804191951264_Valor_Hora.resx">
-      <DependentUpon>201804191951264_Valor_Hora.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804271217513_Initial.resx">
+      <DependentUpon>201804271217513_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

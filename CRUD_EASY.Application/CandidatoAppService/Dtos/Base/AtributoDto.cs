@@ -1,4 +1,5 @@
-﻿using CRUD_EASY.CandidatoAppService.Dtos.Base;
+﻿using Abp.Extensions;
+using CRUD_EASY.CandidatoAppService.Dtos.Base;
 using CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 namespace CRUD_EASY.CandidatoAppService.Dtos
 {
     /// <summary>
-    /// Criei essa Classe pra facilitar o carregamento dos conhecimentos
+    /// Criei essa Classe pra facilitar o Carregamento dos atributos da classe Conhecimento
     /// </summary>
     public class AtributoDto
     {
@@ -19,11 +20,11 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
             public int Nota { get; set; }
        
         /// <summary>
-        /// Usei reflexão pra exibir os atributos por ordem de nota 
+        /// Esse fuunção usa reflexão para exibir os atributos por ordem de nota 
         /// </summary>
-        /// <param name="c">Conhecimento com todos as atributos do candidato</param>
-        /// <returns>Uma string com os conhecimentos concatenados por vírgula</returns>
-        public static string GetProperties(Conhecimento c)
+        /// <param name="c">Objeto Conhecimento com todos as atributos do candidato</param>
+        /// <returns>Uma string com os conhecimentos ordenados por nota e concatenados por vírgula</returns>
+        public static string GetAtributosString(Conhecimento c)
         {
 
             var resultado = "";
@@ -33,7 +34,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
 
             foreach (PropertyInfo propertyInfo in properties)
             {
-                //Pega o valor e o nome
+                //Pega o valor e o nome se a nota for maior que 0
                 var nota = Convert.ToInt32(propertyInfo.GetValue(c, null).ToString());
                 if(nota>0)
                 atributos.Add(new AtributoDto()
@@ -48,20 +49,22 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
             {
                 resultado = resultado + h.Nome + ", ";
             }
-            //Remove Última vírgula e último espaço 
+            //Remove Última vírgula e último espaço caso ele não tenha outra habilidade
+            if(c.Outra.IsNullOrEmpty())
             resultado = resultado.Remove(resultado.Length-2);
+            else resultado = resultado + c.Outra;
             return resultado;
         }
 
         /// <summary>
-        /// Esse método serve apenas pra ajudar a preencher a tela ele vai auxiliar na hora de carregar todos os conhecimentos é um teste não sei se vai funcionar com ng-model mas se funcionar seria top
+        /// Esse método serve apenas pra ajudar a preencher a tela ele vai auxiliar na hora de carregar todos os atributos da classe conhecimento
         /// </summary>
         /// <param name="c">Conhecimento</param>
         /// <returns>Lista dos atributos</returns>
-        public static List<AtributoDto> GetAtributos()
+        public static List<AtributoDto> GetConhecimentos(Conhecimento c = null)
         {
-            //É semelhante ao processo ao lado só que ele retorna os atributos ao invés da string concatenada 
-            var  c = new Conhecimento();
+            //É semelhante ao processo acima só que ele retorna os atributos ao invés da string concatenada 
+            if(c == null) c = new Conhecimento();
             var properties = c.GetType().GetProperties().Where(e => e.PropertyType.Name != "String" && e.Name != "Id").ToList();
             var atributos = new List<AtributoDto>();
 

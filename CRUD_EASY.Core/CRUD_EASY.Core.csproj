@@ -182,7 +182,7 @@
     <Compile Include="Candidatos\Attributes\Bancos\Entity\Banco.cs" />
     <Compile Include="Candidatos\Attributes\Bancos\Types\TipodeConta.cs" />
     <Compile Include="Candidatos\Attributes\Conhecimentos\Entity\Conhecimento.cs" />
-    <Compile Include="Candidatos\Attributes\HorariosDisponiveis\Entity\HorarioDisponivel.cs" />
+    <Compile Include="Candidatos\Attributes\Disponibilidade\Entity\Disponibilidade.cs" />
     <Compile Include="Candidatos\Attributes\MelhoresHorarios\Entity\MelhorHorario.cs" />
     <Compile Include="Candidatos\Entity\Candidato.cs" />
     <Compile Include="Candidatos\Manager\CandidatoManager.cs" />

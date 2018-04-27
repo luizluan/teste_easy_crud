@@ -8,9 +8,10 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
 {
     public class LoadOutput
     {
+       
         /// <summary>
-        /// Pega a lista de  Atributos
+        /// Pega a lista de  Atributos da Classe Conhecimento
         /// </summary>
-        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetAtributos();
+        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetConhecimentos();
     }
 }

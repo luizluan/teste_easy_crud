@@ -5,7 +5,7 @@ using CRUD_EASY.Authorization.Roles;
 using CRUD_EASY.Authorization.Users;
 using CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity;
 using CRUD_EASY.Candidatos.Attributes.Entity.Bancos;
-using CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity;
+using CRUD_EASY.Candidatos.Attributes.Disponibilidade.Entity;
 using CRUD_EASY.Candidatos.Attributes.MelhoresHorarios.Entity;
 using CRUD_EASY.Candidatos.Entity;
 using CRUD_EASY.MultiTenancy;
@@ -20,7 +20,7 @@ namespace CRUD_EASY.EntityFramework
         public virtual IDbSet<Banco> Bancos { get; set; }
         public virtual IDbSet<Conhecimento> Conhecimentos { get; set; }
         public virtual IDbSet<MelhorHorario> MelhoresHorarios { get; set; }
-        public virtual IDbSet<HorarioDisponivel> HorariosDisponiveis { get; set; }
+        public virtual IDbSet<Disponibilidade> HorariosDisponiveis { get; set; }
 
 
 

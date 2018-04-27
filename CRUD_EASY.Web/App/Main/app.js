@@ -27,7 +27,7 @@
                         templateUrl: '/App/Main/views/users/index.cshtml',
                         menu: 'Users' //Matches to name of 'Users' menu in CRUD_EASYNavigationProvider
                     });
-                $urlRouterProvider.otherwise('/users');
+                $urlRouterProvider.otherwise('/');
             }
 
             if (abp.auth.hasPermission('Pages.Roles')) {
@@ -37,7 +37,7 @@
                         templateUrl: '/App/Main/views/roles/index.cshtml',
                         menu: 'Roles' //Matches to name of 'Tenants' menu in CRUD_EASYNavigationProvider
                     });
-                $urlRouterProvider.otherwise('/roles');
+                $urlRouterProvider.otherwise('/');
             }
 
             if (abp.auth.hasPermission('Pages.Tenants')) {
@@ -47,7 +47,7 @@
                         templateUrl: '/App/Main/views/tenants/index.cshtml',
                         menu: 'Tenants' //Matches to name of 'Tenants' menu in CRUD_EASYNavigationProvider
                     });
-                $urlRouterProvider.otherwise('/tenants');
+                $urlRouterProvider.otherwise('/');
             }
 
             $stateProvider
@@ -68,6 +68,38 @@
                 {   url:'/candidato',
                     templateUrl: '/App/Main/views/candidato/create/create.cshtml',
                     menu: 'Candidato'
+                });
+
+            $stateProvider
+                .state('searchCandidato',
+                {
+                    url: '/searchCandidato',
+                    templateUrl: '/App/Main/views/candidato/search/searchCandidato.cshtml',
+                    menu: 'Search'
+                });
+
+            $stateProvider
+                .state('banco',
+                {
+                    url: '/banco',
+                    templateUrl: '/App/Main/views/candidato/create/createBanco.cshtml'
+                    
+                });
+
+            $stateProvider
+                .state('conhecimento',
+                {
+                    url: '/conhecimento',
+                    templateUrl: '/App/Main/views/candidato/create/createConhecimento.cshtml'
+
+                });
+
+            $stateProvider
+                .state('candidatoInfo',
+                {
+                    url: '/candidatoInfo',
+                    templateUrl: '/App/Main/views/candidato/search/candidatoInfo.cshtml'
+
                 });
         }
     ]);

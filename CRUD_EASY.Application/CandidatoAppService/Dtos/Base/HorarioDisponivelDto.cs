@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.CandidatoAppService.Dtos.Base
 {
-    public class HorarioDisponivelDto : EntityDto<int>
+    public class DisponibilidadeDto : EntityDto<int>
     {
         public bool QuatroHorasDia { get; set; }
 

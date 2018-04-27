@@ -1,12 +1,225 @@
 ﻿<div ng-controller="app.views.candidato as vm">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card main-content">
+        <div class="card">
             <div class="header">
                 <h2>
-                   Cadastrar Candidato
+                    Cadastrar Candidato
                 </h2>
             </div>
-            
-            </div>
+
+            <form id="formCreateCandidato" name="formCreateCandidato">
+
+                <div>
+                    <br />
+                    <br />
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.nome" placeholder="Nome *" required  maxlength="100">
+                    </div>
+                </div>
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="email" class="form-control" ng-model="vm.candidato.email" placeholder="Email *" required  maxlength="100">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.telefone" placeholder="Telefone/Whatsapp *" required  maxlength="20" numbers-only>
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.skype" placeholder="Skype *" required  maxlength="50">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.linkedin" placeholder="Linkedin" maxlength="100">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.cidade" placeholder="Cidade *" required  maxlength="50">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.estado" placeholder="Estado *" required  maxlength="50">
+                    </div>
+                </div>
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.portfolio" placeholder="Portfolio"  maxlength="100">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.cpf" placeholder="CPF"   maxlength="15">
+                    </div>
+                </div>
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.crudLink" placeholder="CrudLink"   maxlength="100">
+                    </div>
+                </div>
+
+
+                <div class="input-group col-md-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" ng-model="vm.candidato.valorHora" placeholder="Pretensão Salarial Valor por Hora *"  required   maxlength="4" numbers-only>
+                    </div>
+                </div>
+
+
+                <div class="header">
+                    <h2>
+                        Melhor Horário
+                    </h2>
+                </div>
+
+                <div>
+                    <br />
+                </div>
+
+
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="Manha" id="manha" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.melhorHorario.manha">
+                    <label for="manha">Manhã</label>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="Tarde" id="tarde" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.melhorHorario.tarde">
+                    <label for="tarde">Tarde</label>
+                </div>
+
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="Noite" id="noite" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.melhorHorario.noite">
+                    <label for="noite">Noite</label>
+                </div>
+
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="Madrugada" id="madrugada" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.melhorHorario.madrugada">
+                    <label for="madrugada">Madrugada</label>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="HorarioComercial" id="horarioComercial" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.melhorHorario.horarioComercial">
+                    <label for="horarioComercial">Horário Comercial</label>
+                </div>
+
+
+                <div class="header">
+                    <h2>
+                        Disponibilidade
+                    </h2>
+                </div>
+
+                <div>
+                    <br />
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="QuatroHorasDia" id="quatroHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.quatroHorasDia">
+                    <label for="quatroHorasDia">4 horas por dia </label>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="QuatroaSeisHorasDia" id="quatroaSeisHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.quatroaSeisHorasDia">
+                    <label for="quatroaSeisHorasDia">4 a 6 horas por dia </label>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="MaisdeOitoHorasDia" id="maisdeOitoHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.maisdeOitoHorasDia">
+                    <label for="maisdeOitoHorasDia">mais de 8 horas por dia </label>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <span class="input-group-addon">
+
+                    </span>
+                    <input type="checkbox" name="ApenasFimSemana" id="apenasFimSemana" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.apenasFimSemana">
+                    <label for="apenasFimSemana">Apenas Fim de Semana </label>
+                </div>
+
+                <div class="input-group col-lg-4">
+                    <div class="col-lg-8">
+                        <button type="submit" class="btn bg-success btn-parsley text-white pull-right"  ng-click="formCreateCandidato.$valid && vm.avancar()">
+                            <span class="fa fa-arrow-right text-white"></span>&nbsp;Avançar
+                        </button>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+</div>

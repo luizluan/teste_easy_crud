@@ -37,7 +37,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Base
 
         public MelhorHorarioDto MelhorHorario { get; set; }
 
-        public HorarioDisponivelDto HorarioDisponivel { get; set; }
+        public DisponibilidadeDto Disponibilidade { get; set; }
 
         public ConhecimentoDto Conhecimento { get; set; }
 

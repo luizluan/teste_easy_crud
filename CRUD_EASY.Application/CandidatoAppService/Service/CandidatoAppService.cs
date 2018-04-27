@@ -34,7 +34,7 @@ namespace CRUD_EASY.CandidatoAppService.Service
         /// Cria ou atualiza um candidato
         /// </summary>
         /// <param name="input"></param>
-        /// <returns></returns>
+        /// <returns>Id do Candidato Criado</returns>
         public async Task<Guid> CreateOrUpdate(CandidatoDto input)
         {
             var candidato = input.MapTo<Candidato>();
@@ -47,7 +47,7 @@ namespace CRUD_EASY.CandidatoAppService.Service
         /// <summary>
         /// Carrega os atributos do conhecimento caso a pessoa esteja criando um novo candidato
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Lista com os atributos do conhecimento</returns>
         public LoadOutput LoadAtributos()
         {
             return new LoadOutput();

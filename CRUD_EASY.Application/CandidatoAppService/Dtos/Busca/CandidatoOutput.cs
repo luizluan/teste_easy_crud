@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
 {
+    /// <summary>
+    /// Essa é a classe output do candidato, ela possui os atributos do candidato e mais dois outros exclusivos que são os conhecimentos concatenados e a lista de atributos (usada no update)
+    /// </summary>
     [AutoMapFrom(typeof(Candidato))]
     public class CandidatoOutput : CandidatoDto
     {
@@ -23,7 +26,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         /// <summary>
         /// Pega a lista de  Atributos
         /// </summary>
-        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetAtributos();
+        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetConhecimentos();
 
 
         /// <summary>
@@ -45,7 +48,15 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         public static CandidatoOutput MapTo(Candidato c)
         {
             var candidato = c.MapTo<CandidatoOutput>();
-            candidato.Conhecimentos = AtributoDto.GetProperties(c.Conhecimento);
+            
+            if (c.Conhecimento != null)
+            {
+                //Retorna uma string concatenada com os atributos separados por virgula e ordenados por nota
+                candidato.Conhecimentos = AtributoDto.GetAtributosString(c.Conhecimento);
+
+                //Converter os dados que tem na classe Conhecimento para a classe de AtributoDto facilitando trabalhar com radioButton usando angular
+                candidato.Atributos = AtributoDto.GetConhecimentos(c.Conhecimento);
+            }
             return candidato;
         }
 
