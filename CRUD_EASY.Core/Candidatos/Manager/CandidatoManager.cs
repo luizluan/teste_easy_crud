@@ -8,7 +8,7 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Services;
 using CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity;
 using CRUD_EASY.Candidatos.Attributes.Entity.Bancos;
-using CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity;
+using CRUD_EASY.Candidatos.Attributes.Disponibilidade.Entity;
 using CRUD_EASY.Candidatos.Attributes.MelhoresHorarios.Entity;
 using CRUD_EASY.Candidatos.Entity;
 

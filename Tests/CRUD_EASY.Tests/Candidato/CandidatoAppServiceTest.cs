@@ -2,7 +2,7 @@
 using CRUD_EASY.CandidatoAppService.Dtos.Busca;
 using CRUD_EASY.CandidatoAppService.Dtos.Delete;
 using CRUD_EASY.CandidatoAppService.Service;
-using CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity;
+using CRUD_EASY.Candidatos.Attributes.Disponibilidade.Entity;
 using Shouldly;
 using System;
 using System.Collections.Generic;
