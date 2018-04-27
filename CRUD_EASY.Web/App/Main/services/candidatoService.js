@@ -42,7 +42,9 @@
                     horarioComercial: false
                 },
 
-                conhecimento: { Id: 0, Outra: '' }
+                conhecimento: { Id: 0, Outra: '' },
+
+                atributos: []
 
             };
 

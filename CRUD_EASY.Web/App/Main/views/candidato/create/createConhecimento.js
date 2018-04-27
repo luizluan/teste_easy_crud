@@ -19,7 +19,7 @@
                 vm.conhecimento = candidatoService.candidato.conhecimento;
 
                 //Se os atributos vierem vazios significa que um novo usuário está sendo criado
-                if (candidatoService.atributos.length <= 0)
+                if (candidatoService.atributos.length <= 0 && candidatoService.candidato.atributos.length <= 0)
                     //Carrega os atributos do serviço
                     candidatoService.loadAtributos().then(function (response) {
 
@@ -28,16 +28,21 @@
                         vm.isLoad = true;
                     });
                 else {
+
                     //Caso o usuário esteja sendo editado é preciso preencher os radioButtons
                     //Tive que armazenar o id e a outra habilidade do candidato
                     var id = candidatoService.candidato.conhecimento.id;
                     var outra = candidatoService.candidato.conhecimento.outra;
+
                     //Caso o usuário esteja sem atributos
                     vm.atributos = candidatoService.candidato.atributos == undefined ? candidatoService.atributos : candidatoService.candidato.atributos;
+
                     //Set o valor no Serviço pra quando trocar de tela eu não perde-los
                     candidatoService.candidato.conhecimento = { Id: id, outra: outra };
+
                     //Carrego os dados do serviço 
                     vm.conhecimento = candidatoService.candidato.conhecimento;
+
                     //Os valores vem da Api em int e o radiobutton só funciona com string então tenho que converter tudo, por isso inicializei o objeto
                     angular.forEach(vm.atributos, function (at) {
                         at.nota = at.nota.toString();

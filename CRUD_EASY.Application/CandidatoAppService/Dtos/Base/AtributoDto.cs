@@ -52,7 +52,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
             //Remove Última vírgula e último espaço caso ele não tenha outra habilidade
             if(c.Outra.IsNullOrEmpty())
             resultado = resultado.Remove(resultado.Length-2);
-            else resultado = resultado + ", " + c.Outra;
+            else resultado = resultado + c.Outra;
             return resultado;
         }
 
