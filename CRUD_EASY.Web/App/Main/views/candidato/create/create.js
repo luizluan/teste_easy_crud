@@ -65,7 +65,7 @@
 
             else {
                 vm.candidato = candidatoService.getDefaultCandidato();
-                vm.candidato = candidatoService.candidato;
+                candidatoService.candidato = vm.candidato;
             }
 
         }
