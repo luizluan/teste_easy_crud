@@ -11,8 +11,8 @@ namespace CRUD_EASY.Candidatos.Attributes.HorariosDisponiveis.Entity
     /// <summary>
     /// Classe que representa o número de horas disponíveis que o candidato tem por dia para trabalhar
     /// </summary>
-    [Table("HorarioDisponivel")]
-    public class HorarioDisponivel : Entity<int>
+    [Table("Disponibilidade")]
+    public class Disponibilidade : Entity<int>
     {
         public bool QuatroHorasDia { get; set; }
 

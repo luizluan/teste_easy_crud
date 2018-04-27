@@ -17,6 +17,7 @@ namespace CRUD_EASY.Migrations
                         Nome = c.String(),
                         Agencia = c.String(),
                         NumerodaConta = c.String(),
+                        TipodeConta = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -29,16 +30,17 @@ namespace CRUD_EASY.Migrations
                         Email = c.String(nullable: false),
                         Skype = c.String(nullable: false),
                         Telefone = c.String(nullable: false),
-                        Linkedin = c.String(nullable: false),
+                        Linkedin = c.String(),
                         Cidade = c.String(nullable: false),
                         Estado = c.String(nullable: false),
                         PortFolio = c.String(),
                         CrudLink = c.String(),
                         Cpf = c.String(maxLength: 12),
                         IsDeleted = c.Boolean(nullable: false),
+                        ValorHora = c.Int(nullable: false),
                         Banco_Id = c.Int(),
                         Conhecimento_Id = c.Int(),
-                        HorarioDisponivel_Id = c.Int(),
+                        Disponibilidade_Id = c.Int(),
                         MelhorHorario_Id = c.Int(),
                     },
                 annotations: new Dictionary<string, object>
@@ -48,11 +50,11 @@ namespace CRUD_EASY.Migrations
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Banco", t => t.Banco_Id)
                 .ForeignKey("dbo.Conhecimento", t => t.Conhecimento_Id)
-                .ForeignKey("dbo.HorarioDisponivel", t => t.HorarioDisponivel_Id)
+                .ForeignKey("dbo.Disponibilidade", t => t.Disponibilidade_Id)
                 .ForeignKey("dbo.MelhorHorario", t => t.MelhorHorario_Id)
                 .Index(t => t.Banco_Id)
                 .Index(t => t.Conhecimento_Id)
-                .Index(t => t.HorarioDisponivel_Id)
+                .Index(t => t.Disponibilidade_Id)
                 .Index(t => t.MelhorHorario_Id);
             
             CreateTable(
@@ -91,7 +93,7 @@ namespace CRUD_EASY.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
-                "dbo.HorarioDisponivel",
+                "dbo.Disponibilidade",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -120,15 +122,15 @@ namespace CRUD_EASY.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.Candidato", "MelhorHorario_Id", "dbo.MelhorHorario");
-            DropForeignKey("dbo.Candidato", "HorarioDisponivel_Id", "dbo.HorarioDisponivel");
+            DropForeignKey("dbo.Candidato", "Disponibilidade_Id", "dbo.Disponibilidade");
             DropForeignKey("dbo.Candidato", "Conhecimento_Id", "dbo.Conhecimento");
             DropForeignKey("dbo.Candidato", "Banco_Id", "dbo.Banco");
             DropIndex("dbo.Candidato", new[] { "MelhorHorario_Id" });
-            DropIndex("dbo.Candidato", new[] { "HorarioDisponivel_Id" });
+            DropIndex("dbo.Candidato", new[] { "Disponibilidade_Id" });
             DropIndex("dbo.Candidato", new[] { "Conhecimento_Id" });
             DropIndex("dbo.Candidato", new[] { "Banco_Id" });
             DropTable("dbo.MelhorHorario");
-            DropTable("dbo.HorarioDisponivel");
+            DropTable("dbo.Disponibilidade");
             DropTable("dbo.Conhecimento");
             DropTable("dbo.Candidato",
                 removedAnnotations: new Dictionary<string, object>

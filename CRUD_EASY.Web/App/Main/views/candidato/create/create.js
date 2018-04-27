@@ -59,8 +59,13 @@
                     return false;
             }
 
+            if (candidatoService.etapa != -1)
                 //Carrega as informações que estão no serviço
-                 vm.candidato = candidatoService.candidato;
+                vm.candidato = candidatoService.candidato;
+
+            else {
+                vm.candidato = candidatoService.getDefaultCandidato();
+            }
 
         }
     ]);

@@ -1,4 +1,5 @@
-﻿using CRUD_EASY.CandidatoAppService.Dtos.Base;
+﻿using Abp.Extensions;
+using CRUD_EASY.CandidatoAppService.Dtos.Base;
 using CRUD_EASY.Candidatos.Attributes.Conhecimentos.Entity;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,9 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
         /// <summary>
         /// Esse fuunção usa reflexão para exibir os atributos por ordem de nota 
         /// </summary>
-        /// <param name="c">Conhecimento com todos as atributos do candidato</param>
+        /// <param name="c">Objeto Conhecimento com todos as atributos do candidato</param>
         /// <returns>Uma string com os conhecimentos ordenados por nota e concatenados por vírgula</returns>
-        public static string GetProperties(Conhecimento c)
+        public static string GetAtributosString(Conhecimento c)
         {
 
             var resultado = "";
@@ -48,11 +49,11 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
             {
                 resultado = resultado + h.Nome + ", ";
             }
-            //Remove Última vírgula e último espaço 
+            //Remove Última vírgula e último espaço caso ele não tenha outra habilidade
+            if(c.Outra.IsNullOrEmpty())
             resultado = resultado.Remove(resultado.Length-2);
-
-            //Concatenei outras habilidades no final
-            return resultado+", "+c.Outra;
+            else resultado = resultado + ", " + c.Outra;
+            return resultado;
         }
 
         /// <summary>
@@ -60,7 +61,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos
         /// </summary>
         /// <param name="c">Conhecimento</param>
         /// <returns>Lista dos atributos</returns>
-        public static List<AtributoDto> GetAtributos(Conhecimento c = null)
+        public static List<AtributoDto> GetConhecimentos(Conhecimento c = null)
         {
             //É semelhante ao processo acima só que ele retorna os atributos ao invés da string concatenada 
             if(c == null) c = new Conhecimento();

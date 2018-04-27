@@ -11,14 +11,21 @@
 
                 var vm = this;
 
+
+                //Reseta o serviço 
+                candidatoService.etapa = -1;
+
                 vm.criarNovoCandidato = function () {
-                    candidatoService.candidato = candidatoService.getDefaultCandidato();
+                    candidatoService.etapa = -1;
                     $location.path("/candidato");
                 }
 
+                //Termo de pesquisa
                 vm.term = '';
+                //Lista de candidatos filtrados
                 vm.candidatosFiltered = [];
 
+                //Faz a busca
                 vm.searchIt = function () {
 
                     if (!vm.isSearch && vm.candidatosFiltered.length == 0) {
@@ -38,6 +45,7 @@
 
                 vm.searchIt();
 
+                //Forcar a busca, em bases muito longas o filtro pode não funcionar
                 vm.forcarbusca = function () {
                     vm.isSearch = false;
                     vm.candidatosFiltered = [];
@@ -46,6 +54,8 @@
 
                 String.prototype.contains = function (it) { return this.indexOf(it) != -1; };
 
+
+                //Filtro
                 vm.search = function (item) {
 
                     if (vm.term == '')
@@ -62,12 +72,14 @@
                     return false;
                 }
 
+                //ng-change do input de termo
                 vm.change = function () {
                     vm.isSearch = false;
                     if (vm.candidatos.length == 0)
                         vm.searchIt();
                 }
 
+                //Evento que dispara ao clicar em algum candidato da lista
                 vm.select = function (candidato) {
 
                     candidatoService.candidato = candidato;

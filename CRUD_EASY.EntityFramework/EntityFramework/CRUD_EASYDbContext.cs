@@ -20,7 +20,7 @@ namespace CRUD_EASY.EntityFramework
         public virtual IDbSet<Banco> Bancos { get; set; }
         public virtual IDbSet<Conhecimento> Conhecimentos { get; set; }
         public virtual IDbSet<MelhorHorario> MelhoresHorarios { get; set; }
-        public virtual IDbSet<HorarioDisponivel> HorariosDisponiveis { get; set; }
+        public virtual IDbSet<Disponibilidade> HorariosDisponiveis { get; set; }
 
 
 

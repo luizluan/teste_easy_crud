@@ -15,7 +15,7 @@
                 estado: '',
                 portfolio: '',
                 cpf: '',
-                valorHora: '0',
+                valorHora: '',
 
                 banco: {
                     id: 0,
@@ -25,7 +25,7 @@
                     numerodaConta: ''
                 },
 
-                horarioDisponivel: {
+                disponibilidade: {
                     Id: 0,
                     quatroHorasDia: false,
                     quatroaSeisHorasDia: false,
@@ -59,7 +59,8 @@
                 atributos: [],
 
                 //Pra saber em que etapa da criação ou edição a tela está
-                etapa: 0,
+                etapa: -1,
+
 
                 //Método de criação usando promessa 
                 createOrUpdate: function (candidato) {

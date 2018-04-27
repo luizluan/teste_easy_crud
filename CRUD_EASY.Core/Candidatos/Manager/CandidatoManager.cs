@@ -27,14 +27,14 @@ namespace CRUD_EASY.Candidatos.Manager
         /// </summary>
         private readonly IRepository<Banco, int> _bancoRepository;
         private readonly IRepository<MelhorHorario, int> _melhorHorarioRepository;
-        private readonly IRepository<HorarioDisponivel, int> _horariodisponivelRepository;
+        private readonly IRepository<Disponibilidade, int> _disponibilidadeRepository;
         private readonly IRepository<Conhecimento, int> _conhecimentoRepository;
 
 
         public CandidatoManager(IRepository<Candidato, Guid> candidatoRepository,
                                 IRepository<Banco, int> bancoRepository,
                                 IRepository<MelhorHorario, int> melhorHorarioRepository,
-                                IRepository<HorarioDisponivel, int> horarioDisponivelRepository,
+                                IRepository<Disponibilidade, int> disponibilidadeRepository,
                                 IRepository<Conhecimento, int> conhecimentoRepository)
                                 
             
@@ -43,7 +43,7 @@ namespace CRUD_EASY.Candidatos.Manager
 
             _bancoRepository = bancoRepository;
             _melhorHorarioRepository = melhorHorarioRepository;
-            _horariodisponivelRepository = horarioDisponivelRepository;
+            _disponibilidadeRepository = disponibilidadeRepository;
             _conhecimentoRepository = conhecimentoRepository;
 
 
@@ -72,7 +72,7 @@ namespace CRUD_EASY.Candidatos.Manager
 
                 await _bancoRepository.UpdateAsync(candidato.Banco);
                 await _melhorHorarioRepository.UpdateAsync(candidato.MelhorHorario);
-                await _horariodisponivelRepository.UpdateAsync(candidato.HorarioDisponivel);
+                await _disponibilidadeRepository.UpdateAsync(candidato.Disponibilidade);
                 await _conhecimentoRepository.UpdateAsync(candidato.Conhecimento);
 
                 return candidato.Id;
@@ -97,7 +97,7 @@ namespace CRUD_EASY.Candidatos.Manager
         /// <returns></returns>
         public List<Candidato> Get(Expression<Func<Candidato, bool>> expression)
         {
-            return _candidatoRepository.GetAllIncluding(x => x.Banco, x => x.MelhorHorario, x => x.HorarioDisponivel, x => x.Conhecimento).Where(expression).Take(20).ToList();
+            return _candidatoRepository.GetAllIncluding(x => x.Banco, x => x.MelhorHorario, x => x.Disponibilidade, x => x.Conhecimento).Where(expression).Take(20).ToList();
         }
     }
 }

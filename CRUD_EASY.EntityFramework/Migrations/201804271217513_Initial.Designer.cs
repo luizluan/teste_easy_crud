@@ -7,13 +7,13 @@ namespace CRUD_EASY.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Valor_Hora : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Valor_Hora));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804191951264_Valor_Hora"; }
+            get { return "201804271217513_Initial"; }
         }
         
         string IMigrationMetadata.Source

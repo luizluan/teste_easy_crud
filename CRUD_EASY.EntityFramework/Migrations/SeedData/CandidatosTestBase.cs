@@ -49,7 +49,7 @@ namespace CRUD_EASY.Migrations.SeedData
                     TipodeConta = Candidatos.Attributes.Bancos.Types.TipodeConta.ContaCorrente
                 },
                 MelhorHorario = new MelhorHorario() { HorarioComercial = true },
-                HorarioDisponivel = new HorarioDisponivel() { MaisdeOitoHorasDia = true},
+                Disponibilidade = new Disponibilidade() { MaisdeOitoHorasDia = true},
                 Conhecimento = new Conhecimento() { AspNetMvc = 5}
             });
 
@@ -70,7 +70,7 @@ namespace CRUD_EASY.Migrations.SeedData
                     TipodeConta = Candidatos.Attributes.Bancos.Types.TipodeConta.ContaPoupança
                 },
                 MelhorHorario = new MelhorHorario() { Madrugada = true },
-                HorarioDisponivel = new HorarioDisponivel() { MaisdeOitoHorasDia = true },
+                Disponibilidade = new Disponibilidade() { MaisdeOitoHorasDia = true },
                 Conhecimento = new Conhecimento() {  Android = 5 }
             });
 
@@ -92,7 +92,7 @@ namespace CRUD_EASY.Migrations.SeedData
                     TipodeConta = Candidatos.Attributes.Bancos.Types.TipodeConta.ContaCorrente
                 },
                 MelhorHorario = new MelhorHorario() { Noite = true },
-                HorarioDisponivel = new HorarioDisponivel() { MaisdeOitoHorasDia = true },
+                Disponibilidade = new Disponibilidade() { MaisdeOitoHorasDia = true },
                 Conhecimento = new Conhecimento() { AspNetMvc = 5, Ionic = 2 }
             });
 
@@ -114,7 +114,7 @@ namespace CRUD_EASY.Migrations.SeedData
                     TipodeConta = Candidatos.Attributes.Bancos.Types.TipodeConta.ContaCorrente
                 },
                 MelhorHorario = new MelhorHorario() { HorarioComercial = true },
-                HorarioDisponivel = new HorarioDisponivel() { MaisdeOitoHorasDia = true },
+                Disponibilidade = new Disponibilidade() { MaisdeOitoHorasDia = true },
                 Conhecimento = new Conhecimento() { AspNetMvc = 5 , AngularJs = 4, Html = 5}
             });
 
@@ -136,7 +136,7 @@ namespace CRUD_EASY.Migrations.SeedData
                     TipodeConta = Candidatos.Attributes.Bancos.Types.TipodeConta.ContaPoupança
                 },
                 MelhorHorario = new MelhorHorario() { HorarioComercial = true, Madrugada=true },
-                HorarioDisponivel = new HorarioDisponivel() { QuatroaSeisHorasDia = true },
+                Disponibilidade = new Disponibilidade() { QuatroaSeisHorasDia = true },
                 Conhecimento = new Conhecimento() { AspNetMvc = 5 , AngularJs =5, Android=5, CSS=5}
             });
 

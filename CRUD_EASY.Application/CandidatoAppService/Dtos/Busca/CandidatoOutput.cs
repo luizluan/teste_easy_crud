@@ -26,7 +26,7 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         /// <summary>
         /// Pega a lista de  Atributos
         /// </summary>
-        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetAtributos();
+        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetConhecimentos();
 
 
         /// <summary>
@@ -52,10 +52,10 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
             if (c.Conhecimento != null)
             {
                 //Retorna uma string concatenada com os atributos separados por virgula e ordenados por nota
-                candidato.Conhecimentos = AtributoDto.GetProperties(c.Conhecimento);
+                candidato.Conhecimentos = AtributoDto.GetAtributosString(c.Conhecimento);
 
                 //Converter os dados que tem na classe Conhecimento para a classe de AtributoDto facilitando trabalhar com radioButton usando angular
-                candidato.Atributos = AtributoDto.GetAtributos(c.Conhecimento);
+                candidato.Atributos = AtributoDto.GetConhecimentos(c.Conhecimento);
             }
             return candidato;
         }

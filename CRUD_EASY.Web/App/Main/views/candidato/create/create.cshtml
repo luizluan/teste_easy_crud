@@ -54,7 +54,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.linkedin" placeholder="Linkedin *" required  maxlength="100">
+                        <input type="text" class="form-control" ng-model="vm.candidato.linkedin" placeholder="Linkedin" maxlength="100">
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@
 
                     </span>
                     <div class="form-line">
-                        <input type="text" class="form-control" ng-model="vm.candidato.valorHora" placeholder="ValorHora"   maxlength="4" numbers-only>
+                        <input type="text" class="form-control" ng-model="vm.candidato.valorHora" placeholder="Pretensão Salarial Valor por Hora *"  required   maxlength="4" numbers-only>
                     </div>
                 </div>
 
@@ -170,7 +170,7 @@
 
                 <div class="header">
                     <h2>
-                        Número de Horas Disponíveis
+                        Disponibilidade
                     </h2>
                 </div>
 
@@ -182,7 +182,7 @@
                     <span class="input-group-addon">
 
                     </span>
-                    <input type="checkbox" name="QuatroHorasDia" id="quatroHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.horarioDisponivel.quatroHorasDia">
+                    <input type="checkbox" name="QuatroHorasDia" id="quatroHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.quatroHorasDia">
                     <label for="quatroHorasDia">4 horas por dia </label>
                 </div>
 
@@ -190,7 +190,7 @@
                     <span class="input-group-addon">
 
                     </span>
-                    <input type="checkbox" name="QuatroaSeisHorasDia" id="quatroaSeisHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.horarioDisponivel.quatroaSeisHorasDia">
+                    <input type="checkbox" name="QuatroaSeisHorasDia" id="quatroaSeisHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.quatroaSeisHorasDia">
                     <label for="quatroaSeisHorasDia">4 a 6 horas por dia </label>
                 </div>
 
@@ -198,7 +198,7 @@
                     <span class="input-group-addon">
 
                     </span>
-                    <input type="checkbox" name="MaisdeOitoHorasDia" id="maisdeOitoHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.horarioDisponivel.maisdeOitoHorasDia">
+                    <input type="checkbox" name="MaisdeOitoHorasDia" id="maisdeOitoHorasDia" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.maisdeOitoHorasDia">
                     <label for="maisdeOitoHorasDia">mais de 8 horas por dia </label>
                 </div>
 
@@ -206,7 +206,7 @@
                     <span class="input-group-addon">
 
                     </span>
-                    <input type="checkbox" name="ApenasFimSemana" id="apenasFimSemana" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.horarioDisponivel.apenasFimSemana">
+                    <input type="checkbox" name="ApenasFimSemana" id="apenasFimSemana" class="filled-in chk-col-pink" value="true" ng-model="vm.candidato.disponibilidade.apenasFimSemana">
                     <label for="apenasFimSemana">Apenas Fim de Semana </label>
                 </div>
 

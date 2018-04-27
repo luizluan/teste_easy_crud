@@ -12,6 +12,6 @@ namespace CRUD_EASY.CandidatoAppService.Dtos.Busca
         /// <summary>
         /// Pega a lista de  Atributos da Classe Conhecimento
         /// </summary>
-        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetAtributos();
+        public List<AtributoDto> Atributos { get; set; } = AtributoDto.GetConhecimentos();
     }
 }

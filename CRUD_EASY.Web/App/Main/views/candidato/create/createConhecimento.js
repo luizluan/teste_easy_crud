@@ -13,7 +13,7 @@
                 var vm = this;
 
                 //Essa listinha serve pra preencher o label dos radiobuttons
-                vm.default = [1, 2, 3, 4, 5];
+                vm.default = [0,1, 2, 3, 4, 5];
 
                 //Carrega os dados do serviço
                 vm.conhecimento = candidatoService.candidato.conhecimento;
@@ -64,6 +64,7 @@
                        "", function (isConfirm) {
                            candidatoService.createOrUpdate(candidatoService.candidato).then(function () {
                                abp.notify.success("Candidato Salvo com Sussesso!!!");
+                               candidatoService.etapa = -1;
                                $location.path("/searchCandidato");
                             });
                         });

@@ -36,7 +36,7 @@ namespace CRUD_EASY.Candidatos.Entity
         [Required]
         public string Telefone { get; set; }
 
-        [Required]
+        
         public string Linkedin { get; set; }
 
         [Required]
@@ -60,10 +60,11 @@ namespace CRUD_EASY.Candidatos.Entity
 
         public MelhorHorario MelhorHorario {get;set;}
 
-        public HorarioDisponivel HorarioDisponivel { get; set; }
+        public Disponibilidade Disponibilidade { get; set; }
 
         public Conhecimento Conhecimento { get; set; }
 
+        [Required]
         public int ValorHora {get;set;}
 
     }
