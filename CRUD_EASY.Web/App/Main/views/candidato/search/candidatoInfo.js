@@ -29,6 +29,7 @@
                 vm.excluir = function () {
                     abp.message.confirm("Tem certeza que dejesa excluir o candidato?",
                         "", function (isConfirm) {
+                            if (isConfirm)
                             candidatoService.excluirCandidato(vm.candidato.id).then(function () {
                                 abp.notify.info("Candidato excluido com sussesso!");
 

@@ -51,10 +51,10 @@
             var _session = {
 
                 //Candidato com os valores que fica armazenado no serviço 
-                candidato: defaultCandidato,
+                candidato: JSON.parse(JSON.stringify(defaultCandidato)) ,
                 //Reset o candidato dentro da Factory
                 getDefaultCandidato: function () {
-                    return defaultCandidato;
+                    return JSON.parse(JSON.stringify(defaultCandidato)); 
                 },
 
                 //Lista de atributos

@@ -66,7 +66,8 @@
                 vm.salvar = function () {
 
                     abp.message.confirm("Tem certeza que dejesa salvar o candidato?",
-                       "", function (isConfirm) {
+                        "", function (isConfirm) {
+                           if(isConfirm)
                            candidatoService.createOrUpdate(candidatoService.candidato).then(function () {
                                abp.notify.success("Candidato Salvo com Sussesso!!!");
                                candidatoService.etapa = -1;
