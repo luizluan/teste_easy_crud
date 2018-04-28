@@ -1,4 +1,4 @@
-# Projeto processo de seleção empresa Easy Communication & Technology
+# Projeto para o processo de seleção da empresa Easy Communication & Technology
 CRUD
 
 Este Projeto faz parte do processo de seleção da empresa Easy Communication & Technology
