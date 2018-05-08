@@ -21,4 +21,8 @@ Instruções de como executar o projeto:
 *Rode o sistema 
 
 
+Login: admin
+Senha: 123qwe
+
+
 
